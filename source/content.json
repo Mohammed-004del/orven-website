@@ -986,8 +986,8 @@
           "ar": "تعرّف على فريق ORVEN."
         },
         "body": {
-          "en": "Behind ORVEN are two developers with complementary skills and a shared approach to building digital solutions. We work closely across design, development, and client communication to bring each project together.",
-          "ar": "وراء ORVEN مطوّران بمهارات متكاملة ومنهج مشترك لبناء الحلول الرقمية. نعمل معًا في التصميم والتطوير والتواصل مع العملاء لتتكامل جميع أجزاء المشروع."
+          "en": "Behind ORVEN are three co-founders with complementary skills and a shared approach to building digital solutions. We work closely across design, development, and client communication to bring each project together.",
+          "ar": "وراء ORVEN ثلاثة شركاء مؤسسين بمهارات متكاملة ومنهج مشترك لبناء الحلول الرقمية. نعمل معًا في التصميم والتطوير والتواصل مع العملاء لتتكامل جميع أجزاء المشروع."
         },
         "label": {
           "en": "THE PEOPLE BEHIND ORVEN",
@@ -1024,6 +1024,16 @@
               "ar": "شريك مؤسس · تطوير الأنظمة الخلفية"
             },
             "social": "hadidy"
+          },
+          {
+            "title": {
+              "en": "Ziad Mohamed",
+              "ar": "زياد محمد"
+            },
+            "role": {
+              "en": "Co-Founder",
+              "ar": "شريك مؤسس"
+            }
           }
         ]
       },

@@ -107,7 +107,7 @@ def render_section(s,l,i,page):
   for j,a in enumerate(s['items']):
    out+=f'<article><span class="item-number">{j+1:02d}</span><h3>{e(t(a["title"],l))}</h3>'
    if 'role' in a: out+='<p class="role">'+e(t(a['role'],l))+'</p>'
-   out+='<p class="muted">'+e(t(a['body'],l))+'</p>'
+   if a.get('body'): out+='<p class="muted">'+e(t(a['body'],l))+'</p>'
    if 'target' in a: out+=link(e(t(a['cta'],l)),'/'+l+'/'+a['target'],'text-link')
    if 'social' in a and K['linkedin'].get(a['social']): out+=link('LinkedIn',K['linkedin'][a['social']],'text-link',True)
    if 'channel' in a:
