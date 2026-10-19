@@ -56,8 +56,17 @@ def projects(l,home):
  for k,p in C['projects'].items():
   out+=f'<article class="project"><a class="project-image {k}" href="{path(k,l)}" aria-label="{e(p["name"])} — {L("viewCase",l)}"><img src="/assets/{p["cover"][l]}" alt="{e(p["name"])} — {L("screen",l)}" width="1440" height="720" loading="lazy"></a><p class="project-sector">{e(t(p["sector"],l))}</p><h3>{e(p["name"])}</h3><p class="muted">{e(t(p["homeBody" if home else "body"],l))}</p>'+link(L('exploreCase' if home else 'viewCase',l),path(k,l),'text-link')+'</article>'
  return out+'</div><div class="work-bottom"><p class="muted">'+L('credit',l)+'</p>'+(link(L('allWork',l),path('work',l),'text-link') if home else '')+'</div>'
+def review_text(r,l,a,b,cls):
+ # Client words stay verbatim in Arabic; the English page adds a labelled faithful translation.
+ out=f'<blockquote class="{cls}" lang="ar" dir="rtl">'+''.join('<p>'+e(x)+'</p>' for x in r['original'][a:b])+'</blockquote>'
+ if l=='en': out+=('<p class="review-translation-label">'+L('translation',l)+'</p>' if a==0 else '')+'<div class="review-translation" lang="en">'+''.join('<p>'+e(x)+'</p>' for x in r['en'][a:b])+'</div>'
+ return out
+def review(key,name,sector,cls,l):
+ r=C['review'][key];out='<article class="review"><p class="eyebrow">'+L('feedbackSummary',l)+'</p>'+review_text(r,l,0,1,cls)
+ if len(r['original'])>1: out+='<details class="review-more"><summary><span class="more">'+L('readFull',l)+'</span><span class="less">'+L('showLess',l)+'</span><span class="sign" aria-hidden="true">+</span></summary>'+review_text(r,l,1,None,cls)+'</details>'
+ return out+'<p class="review-name">'+name+'</p><p class="muted">'+t(sector,l)+'</p></article>'
 def reviews(l):
- return '<div class="reviews-grid"><article><p class="eyebrow">'+L('translatedQuote',l)+'</p><blockquote>'+e(t(C['review']['spiky'],l))+'</blockquote>'+('<p lang="ar" dir="rtl">«برنامج جميل جدا»</p>' if l=='en' else '')+'<p class="review-name">Spiky</p><p class="muted">'+t({'en':'Fitness & Nutrition Coaching','ar':'التدريب والتغذية'},l)+'</p></article><article><p class="eyebrow">'+L('feedbackSummary',l)+'</p><p class="review-summary">'+e(t(C['review']['future'],l))+'</p><p class="review-name">Future Interiors</p><p class="muted">'+t({'en':'Engineering Supervision','ar':'الإشراف الهندسي'},l)+'</p></article></div><p class="review-note muted">'+L('credit',l)+'</p>'
+ return '<div class="reviews-grid">'+review('spiky','Spiky',{'en':'Fitness & Nutrition Coaching','ar':'التدريب والتغذية'},'review-quote',l)+review('future','Future Interiors',{'en':'Engineering Supervision','ar':'الإشراف الهندسي'},'review-summary',l)+'</div><p class="review-note muted">'+L('credit',l)+'</p>'
 def form(l):
  f=C['form']; q=lambda x:e(t(f[x],l)); out='<form id="inquiry" novalidate><div class="form-grid">'
  for key,typ,auto,maxlen in [('name','text','name',120),('contact','text','email',254)]:

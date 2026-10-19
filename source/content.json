@@ -133,16 +133,28 @@
       "ar": "مكتمل وتم تسليمه"
     },
     "feedbackSummary": {
-      "en": "Client feedback · Edited summary",
-      "ar": "رأي العميل · ملخص محرر"
+      "en": "Client feedback · Original Arabic, translated below",
+      "ar": "رأي العميل · النص الأصلي"
     },
     "translatedQuote": {
-      "en": "Translated excerpt · Arabic original below",
-      "ar": "مقتطف أصلي من تقييم العميل"
+      "en": "Client feedback · Original Arabic, translated below",
+      "ar": "رأي العميل · النص الأصلي"
     },
     "screen": {
       "en": "Original project screenshot",
       "ar": "لقطة أصلية من المشروع"
+    },
+    "translation": {
+      "en": "English translation",
+      "ar": "ترجمة إنجليزية"
+    },
+    "readFull": {
+      "en": "Read the full feedback",
+      "ar": "اقرأ الرأي كاملًا"
+    },
+    "showLess": {
+      "en": "Show less",
+      "ar": "عرض أقل"
     }
   },
   "form": {
@@ -715,8 +727,7 @@
         "cta": {
           "en": "Discuss Your Web App",
           "ar": "لنتحدث عن تطبيقك"
-        },
-        "examples": true
+        }
       },
       {
         "kind": "cards",
@@ -1125,12 +1136,26 @@
   },
   "review": {
     "spiky": {
-      "en": "A very good program.",
-      "ar": "برنامج جميل جدا"
+      "original": [
+        "ماشاء برنامج جميل جدا وكل الاعيبه الا معايا مبسوطه جدا وسهل ف التعامل ومتكامل ومش ناقصه اي حاجه حقيقي"
+      ],
+      "en": [
+        "Mashallah, a really great program. All the clients I train are very happy with it. It's easy to use, complete, and honestly isn't missing anything."
+      ]
     },
     "future": {
-      "en": "The client highlighted clear communication, a comfortable working experience, and the value of having a professional website alongside tools for managing project and client information.",
-      "ar": "أشار العميل إلى وضوح التواصل وسهولة التعامل، وإلى فائدة وجود موقع احترافي وأدوات لإدارة معلومات العملاء والمشروعات."
+      "original": [
+        "بصراحة أنا سعيد جداً بالتعامل مع البشمهندس في تنفيذ الموقع والسيستم الخاص بشغلي في مجال التشطيبات. النتيجة كانت أفضل من توقعاتي، سواء من حيث التصميم الاحترافي أو سهولة الاستخدام أو الإمكانيات اللي بيوفرها.",
+        "الموقع ساعدني أعرض أعمالي السابقة بشكل مميز واحترافي، وأوضح الخدمات والباقات اللي بقدمها للعملاء، بالإضافة إلى إمكانية متابعة العملاء والمشروعات من خلال لوحة تحكم متكاملة، مع إتاحة الفرصة لكل عميل إنه يتابع تفاصيل مشروعه ومراحل التنفيذ بسهولة.",
+        "أكتر حاجة عجبتني هي إن المشروع مش مجرد موقع لعرض الأعمال، لكنه سيستم متكامل وعملي ساعدني في تنظيم شغلي، وتحسين طريقة إدارة المشروعات، والتواصل مع العملاء بشكل أفضل وأكثر احترافية.",
+        "التجربة كانت مميزة جداً، وبقدر المجهود المبذول والاهتمام بالتفاصيل وجودة التنفيذ. أنصح بالتعامل مع البشمهندس لأي شخص بيدور على موقع احترافي أو حل تقني متكامل يتناسب مع طبيعة شغله ويساعده يطوره."
+      ],
+      "en": [
+        "Honestly, I'm very happy with working with the engineer on the website and system for my business in the finishing field. The result exceeded my expectations in its professional design, its ease of use, and the features it provides.",
+        "The website helped me present my previous work in a distinctive, professional way and clearly show the services and packages I offer clients. It also lets me follow up on clients and projects through a complete dashboard, while every client can easily follow their own project's details and execution stages.",
+        "What I liked most is that the project isn't just a website for showing work. It's a complete, practical system that helped me organize my work, improve how I manage projects, and communicate with clients in a better, more professional way.",
+        "It was a truly great experience, and I appreciate the effort, the attention to detail, and the quality of execution. I recommend working with the engineer to anyone looking for a professional website or a complete technical solution that suits their kind of work and helps them grow it."
+      ]
     }
   }
 }
