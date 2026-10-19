@@ -1,0 +1,158 @@
+{
+  "spiky": {
+    "title": {
+      "en": "Spiky — One platform. Two connected experiences.",
+      "ar": "Spiky — منصة واحدة. تجربتان مترابطتان."
+    },
+    "sections": [
+      {
+        "label": {
+          "en": "Project Hero",
+          "ar": "مقدمة المشروع"
+        },
+        "html": {
+          "en": "<p>An Arabic coaching platform built to connect the coach's daily workflow with the client's training and nutrition experience. From creating personalized plans to following them on mobile, Spiky brings both sides of coaching into one connected system.</p>",
+          "ar": "<p>منصة تدريب عربية تربط سير العمل اليومي للمدرّب بتجربة المتدرّب في التدريب والتغذية. من إعداد الخطط المخصّصة إلى متابعتها على الهاتف، تجمع Spiky جانبي تجربة التدريب في نظام مترابط.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "The Challenge",
+          "ar": "التحدّي"
+        },
+        "html": {
+          "en": "<h3>Coaching involves more than creating a plan.</h3><p>A coach needs to manage exercises, nutrition content, individual requirements, and updates while making sure every client can easily access their plan.</p><p>The goal was to bring these connected tasks into one platform: a practical workspace for the coach and a clear, interactive experience for clients.</p>",
+          "ar": "<h3>التدريب يتطلّب أكثر من إعداد خطة.</h3><p>يحتاج المدرّب إلى إدارة التمارين والمحتوى الغذائي والمتطلبات الفردية والتحديثات، مع ضمان وصول كل متدرّب إلى خطته بسهولة.</p><p>كان الهدف جمع هذه المهام المترابطة في منصة واحدة: مساحة عمل عملية للمدرّب وتجربة واضحة وتفاعلية للمتدرّبين.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "The Solution",
+          "ar": "الحل"
+        },
+        "html": {
+          "en": "<h3>One system, built around both sides of coaching.</h3><p>Spiky combines a management dashboard with a mobile-friendly client application.</p><p>The coach can organize reusable content, build personalized training and nutrition plans, and share access with individual clients. Clients can then follow their plans, review exercise instructions, and access updates in one place.</p><p>The platform also supports downloadable training and nutrition guides for clients who prefer keeping a PDF copy.</p>",
+          "ar": "<h3>نظام واحد، مصمّم للمدرّب والمتدرّب.</h3><p>تجمع Spiky لوحة إدارة وتطبيقًا للمتدرّب متوافقًا مع الهواتف.</p><p>يستطيع المدرّب تنظيم المحتوى القابل لإعادة الاستخدام، وإعداد خطط تدريب وتغذية مخصّصة، ومشاركة الوصول مع كل متدرّب. ويستطيع المتدرّب متابعة خطته وتعليمات التمارين والتحديثات في مكان واحد.</p><p>تدعم المنصة أيضًا تنزيل أدلّة التدريب والتغذية لمن يفضّل الاحتفاظ بنسخة PDF.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "Key Features",
+          "ar": "أبرز المزايا"
+        },
+        "html": {
+          "en": "<h3>Built for the coach.</h3><p><strong>Content libraries.</strong> Organized food, exercise, recipe, and supplement libraries make existing content easier to find, reuse, and personalize.</p><p><strong>Personalized plans.</strong> Training schedules, grouped sets, supersets, meals, and alternatives can be assembled around individual requirements.</p><p><strong>Client management.</strong> Dedicated access links connect each client to their own plans and updates.</p><p><strong>PDF guides.</strong> Structured training and nutrition guides can be downloaded, including QR codes linking to exercise videos.</p><h3>Designed for the client.</h3><p><strong>Training made accessible.</strong> Weekly training plans include exercise references, videos, sets, rest timers, and coach notes.</p><p><strong>Nutrition in context.</strong> Clients can review meals, alternatives, and nutrition details through their own interface.</p><p><strong>Daily tracking.</strong> Water logging and weekly charts give clients a simple way to follow their hydration activity.</p><p><strong>A connected experience.</strong> Plan updates can be reflected in the client's application without repeatedly sending replacement documents.</p>",
+          "ar": "<h3>أدوات للمدرّب.</h3><p><strong>مكتبات المحتوى.</strong> تنظيم الأطعمة والتمارين والوصفات والمكمّلات لتسهيل البحث وإعادة الاستخدام والتخصيص.</p><p><strong>خطط مخصّصة.</strong> إعداد جداول التدريب والمجموعات والتمارين المتتابعة والوجبات وبدائلها وفق الاحتياجات الفردية.</p><p><strong>إدارة المتدرّبين.</strong> روابط وصول مخصّصة تربط كل متدرّب بخططه وتحديثاته.</p><p><strong>أدلّة PDF.</strong> تنزيل أدلّة منظّمة للتدريب والتغذية، تتضمّن رموز QR للوصول إلى فيديوهات التمارين.</p><h3>تجربة للمتدرّب.</h3><p><strong>وصول واضح إلى التدريب.</strong> خطط أسبوعية تتضمّن مراجع التمارين والفيديوهات والمجموعات ومؤقّتات الراحة وملاحظات المدرّب.</p><p><strong>تفاصيل التغذية.</strong> عرض الوجبات وبدائلها ومعلوماتها الغذائية ضمن واجهة المتدرّب.</p><p><strong>المتابعة اليومية.</strong> تسجيل شرب الماء وعرض رسوم أسبوعية لمتابعة الترطيب.</p><p><strong>تجربة مترابطة.</strong> تنعكس تحديثات الخطة داخل التطبيق، دون الحاجة إلى إرسال مستندات بديلة بصورة متكرّرة.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "Project Gallery",
+          "ar": "صور من المشروع"
+        },
+        "html": {
+          "en": "",
+          "ar": ""
+        }
+      },
+      {
+        "label": {
+          "en": "The Outcome",
+          "ar": "النتيجة"
+        },
+        "html": {
+          "en": "<h3>From separate coaching tasks to one connected workflow.</h3><p>Spiky was completed, delivered, and put into use by the coach.</p><p>The delivered platform brings together the coach's content management, personalized plan creation, interactive client experience, and downloadable guides.</p><p>Its content libraries include <strong>151 food items, 101 exercises, 10 muscle groups, 47 recipes, and 10 supplements</strong>. These figures describe the content available in the platform, not business growth metrics.</p><p><strong>Technology:</strong> HTML, CSS, JavaScript, Supabase, Vercel Serverless Functions, Puppeteer.</p><p><strong>Client Feedback:</strong> The coach's feedback highlighted ease of use and positive responses from the trainees using the platform.</p><p><strong>Project Lead:</strong> Mohamed Hamed · ORVEN Co-Founder</p>",
+          "ar": "<h3>من مهام متفرّقة إلى سير عمل مترابط.</h3><p>اكتمل تطوير Spiky وتسليمه، وبدأ المدرّب استخدامه.</p><p>تجمع المنصة المُسلَّمة إدارة المحتوى، وإعداد الخطط المخصّصة، وتجربة المتدرّب التفاعلية، والأدلّة القابلة للتنزيل.</p><p>تضم مكتبات المحتوى 151 صنفًا غذائيًا، و101 تمرين، و10 مجموعات عضلية، و47 وصفة، و10 مكمّلات. تصف هذه الأرقام محتوى المنصة، وليست مؤشرات لنمو الأعمال.</p><p><strong>التقنيات:</strong> <bdi>HTML, CSS, JavaScript, Supabase, Vercel Serverless Functions, Puppeteer.</bdi></p><p><strong>رأي العميل:</strong> أشار المدرّب إلى سهولة الاستخدام وردود الفعل الإيجابية من المتدرّبين الذين يستخدمون المنصة.</p><p><strong>مسؤول المشروع:</strong> محمد حامد · أحد مؤسسي ORVEN</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "Let’s talk",
+          "ar": "لنتحدث"
+        },
+        "html": {
+          "en": "<h3>Building something for your clients?</h3><p>Every business has its own way of working. Tell us what yours needs, and let's explore a solution that fits.</p>",
+          "ar": "<h3>هل تبني خدمة لعملائك؟</h3><p>لكل نشاط طريقة عمله. حدّثنا عمّا يحتاجه نشاطك، ولنستكشف حلًا يناسبه.</p>"
+        }
+      }
+    ]
+  },
+  "future-interiors": {
+    "title": {
+      "en": "Future Interiors — A clearer view of every project.",
+      "ar": "Future Interiors — رؤية أوضح لكل مشروع."
+    },
+    "sections": [
+      {
+        "label": {
+          "en": "Project Hero",
+          "ar": "مقدمة المشروع"
+        },
+        "html": {
+          "en": "<p>A connected digital platform combining a bilingual company website, a private client portal, and an administrative dashboard. Built around the needs of an engineering-supervision business, Future Interiors brings public project presentation and project management into one system.</p>",
+          "ar": "<p>منصة رقمية مترابطة تجمع موقع الشركة بالعربية والإنجليزية، وبوابة خاصة للعملاء، ولوحة تحكّم للإدارة. صُمّمت Future Interiors حول احتياجات نشاط الإشراف الهندسي لتجمع عرض المشروعات ومتابعتها وإدارتها في نظام واحد.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "The Challenge",
+          "ar": "التحدّي"
+        },
+        "html": {
+          "en": "<h3>Project visibility shouldn't depend on asking for updates.</h3><p>Interior finishing projects involve work stages and ongoing changes.</p><p>Clients need a clear understanding of where their project stands. Meanwhile, the engineer needs an organized way to manage those details without relying entirely on scattered spreadsheets, messages, and manual updates.</p><p>The goal was to make project information easier to access and manage, while giving the business a professional online presence.</p>",
+          "ar": "<h3>متابعة المشروع ينبغي أن تكون واضحة ومتاحة.</h3><p>تتضمّن مشروعات التشطيب مراحل تنفيذ وتحديثات مستمرة.</p><p>يحتاج العميل إلى رؤية واضحة لحالة مشروعه، ويحتاج المهندس إلى طريقة منظّمة لإدارة التفاصيل بدلًا من الاعتماد على جداول ورسائل وتحديثات يدوية متفرّقة.</p><p>كان الهدف تسهيل الوصول إلى معلومات المشروع وإدارتها، مع تقديم نشاط الشركة بصورة احترافية على الإنترنت.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "The Solution",
+          "ar": "الحل"
+        },
+        "html": {
+          "en": "<h3>Three connected experiences. One system.</h3><p>Future Interiors brings together three interfaces, each designed for a different purpose.</p><p><strong>01 — The Public Website</strong> A bilingual website presenting the business, its engineering-supervision services, and selected projects. Visitors can explore the work and find a clear way to get in touch.</p><p><strong>02 — The Client Portal</strong> A private project view accessed using a project code and registered phone number. Clients can follow progress stages and supporting photographs.</p><p><strong>03 — The Admin Dashboard</strong> A management workspace where the engineer can organize clients, projects, progress updates, and website content from one place.</p>",
+          "ar": "<h3>ثلاث واجهات مترابطة. نظام واحد.</h3><p>تجمع Future Interiors ثلاث واجهات، لكل منها دور مختلف.</p><p><strong>01 — الموقع التعريفي</strong> موقع بالعربية والإنجليزية يعرّف بالشركة وخدمات الإشراف الهندسي ومجموعة من أعمالها. يستطيع الزائر استكشاف المشروعات والوصول إلى وسيلة واضحة للتواصل.</p><p><strong>02 — بوابة العملاء</strong> مساحة خاصة للمشروع، يدخل إليها العميل باستخدام رمز المشروع ورقم الهاتف المسجّل، لمتابعة مراحل التنفيذ والتحديثات والصور.</p><p><strong>03 — لوحة تحكّم الإدارة</strong> مساحة عمل ينظّم فيها المهندس العملاء والمشروعات والتحديثات ومحتوى الموقع من مكان واحد.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "Key Features",
+          "ar": "أبرز المزايا"
+        },
+        "html": {
+          "en": "<h3>Transparency for the client.</h3><p><strong>Project progress.</strong> Work stages and supporting images provide a clearer view of how the project is developing.</p><p><strong>Private project access.</strong> Each client's information is presented through a dedicated project view.</p><h3>Control for the engineer.</h3><p><strong>Project management.</strong> Create and organize client projects, work stages, and relevant records.</p><p><strong>Content management.</strong> Update the company's services, projects, and bilingual website content without editing the site's code.</p><p><strong>Financial administration.</strong> Tools for recording expenses and payments and organizing project financial tracking.</p>",
+          "ar": "<h3>وضوح للعميل.</h3><p><strong>متابعة تقدّم المشروع.</strong> عرض مراحل العمل وتحديثاتها والصور المرتبطة بها.</p><p><strong>وصول خاص بالمشروع.</strong> عرض المعلومات الخاصة بكل عميل عبر بوابة مخصّصة.</p><h3>أدوات للمهندس.</h3><p><strong>إدارة المشروعات.</strong> تنظيم العملاء والمشروعات ومراحل العمل والسجلات المرتبطة بها.</p><p><strong>إدارة المحتوى.</strong> تحديث خدمات الشركة ومشروعاتها والمحتوى باللغتين دون تعديل شيفرة الموقع.</p><p><strong>الإدارة المالية.</strong> أدوات لتسجيل المصروفات والدفعات وتنظيم المتابعة المالية للمشروع.</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "Project Gallery",
+          "ar": "صور من المشروع"
+        },
+        "html": {
+          "en": "",
+          "ar": ""
+        }
+      },
+      {
+        "label": {
+          "en": "The Outcome",
+          "ar": "النتيجة"
+        },
+        "html": {
+          "en": "<h3>A more connected way to present and manage finishing projects.</h3><p>Future Interiors was completed and delivered as an integrated platform with three connected interfaces.</p><p>The company gained a bilingual public website alongside a private client-tracking experience and tools for day-to-day project administration.</p><p>The project also included implementation and testing work, with an operational database availability issue addressed after delivery.</p><p><strong>Technology:</strong> Next.js, TypeScript, Tailwind CSS, Supabase, Vercel.</p><p><strong>Client Feedback:</strong> The client highlighted clear communication, a comfortable working experience, and the value of having a professional website alongside tools for managing project and client information.</p><p><strong>Project Lead:</strong> Mohamed El-Hadidy · ORVEN Co-Founder</p>",
+          "ar": "<h3>طريقة أكثر ترابطًا لعرض مشروعات التشطيب وإدارتها.</h3><p>اكتمل تنفيذ Future Interiors وتسليمه كمنصة تجمع ثلاث واجهات مترابطة.</p><p>أصبح لدى الشركة موقع تعريفي ثنائي اللغة، وتجربة خاصة لمتابعة العملاء، وأدوات للإدارة اليومية للمشروعات.</p><p>شمل المشروع تنفيذ الوظائف واختبارها، ومعالجة مشكلة تشغيلية تتعلّق بإتاحة قاعدة البيانات ظهرت بعد التسليم.</p><p><strong>التقنيات:</strong> <bdi>Next.js, TypeScript, Tailwind CSS, Supabase, Vercel.</bdi></p><p><strong>رأي العميل:</strong> أشار العميل إلى وضوح التواصل وسهولة التعامل، وإلى فائدة وجود موقع احترافي وأدوات لإدارة معلومات العملاء والمشروعات.</p><p><strong>مسؤول المشروع:</strong> محمد الحديدي · أحد مؤسسي ORVEN</p>"
+        }
+      },
+      {
+        "label": {
+          "en": "Let’s talk",
+          "ar": "لنتحدث"
+        },
+        "html": {
+          "en": "<h3>Your business deserves a system that fits the way it works.</h3><p>From a professional website to tools that help manage daily operations, let's talk about what your business actually needs.</p>",
+          "ar": "<h3>نشاطك يستحق نظامًا يناسب طريقة عمله.</h3><p>من موقع احترافي إلى أدوات تدعم إدارة العمل اليومي، لنتحدث عمّا يحتاجه نشاطك فعلًا.</p>"
+        }
+      }
+    ]
+  }
+}

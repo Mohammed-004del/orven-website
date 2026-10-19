@@ -1,0 +1,20 @@
+{
+  "site_url": "https://orven.orven-agency01.workers.dev",
+  "whatsapp": "201156682812",
+  "email": "orven.agency01@gmail.com",
+  "instagram": "https://www.instagram.com/orven.dev/",
+  "linkedin": {
+    "hamed": "https://www.linkedin.com/in/mohammed-mahmood-7327b0301",
+    "hadidy": "https://www.linkedin.com/in/muhammed-mahmoud-7b933933b/"
+  },
+  "form_endpoint": "/api/inquiry",
+  "hosting_provider": "Cloudflare Workers & Pages",
+  "form_provider": "Cloudflare Worker, Google Apps Script, Google Forms and Gmail",
+  "data_controller": "ORVEN — Mohamed Hamed and Mohamed El-Hadidy",
+  "retention_period": "30 days from the last actual contact for inquiries that do not become projects; documented legal holds are reviewed separately",
+  "analytics": false,
+  "privacy_reviewed": true,
+  "production": true,
+  "call_number": "201125301065",
+  "turnstile_site_key": "0x4AAAAAAFb7MlyDshEGd2iA"
+}

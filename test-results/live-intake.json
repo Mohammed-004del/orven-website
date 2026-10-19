@@ -1,0 +1,12 @@
+{
+  "site": "https://orven.orven-agency01.workers.dev",
+  "requestId": "a7eecac2-ed77-405c-9994-877e6638d0f5",
+  "locale": "ar",
+  "synthetic": true,
+  "successMessage": "وصلتنا رسالتك. سنتواصل معك.",
+  "googleOwnerAdminRecordObserved": true,
+  "retentionEnabledObserved": true,
+  "gmailNotificationObserved": true,
+  "savedAtCairo": "2026-10-19 22:22:03",
+  "scope": "Real branded form → managed Turnstile → Worker → signed Apps Script → Google Forms read-back and Gmail notification. No client data."
+}

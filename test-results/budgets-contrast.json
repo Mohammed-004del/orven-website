@@ -1,0 +1,135 @@
+{
+  "colors": [
+    {
+      "name": "Dark body",
+      "ratio": 17.12,
+      "passed": true
+    },
+    {
+      "name": "Dark secondary",
+      "ratio": 9.23,
+      "passed": true
+    },
+    {
+      "name": "Bronze on dark",
+      "ratio": 7.98,
+      "passed": true
+    },
+    {
+      "name": "Light body",
+      "ratio": 15.44,
+      "passed": true
+    },
+    {
+      "name": "Light secondary",
+      "ratio": 5.86,
+      "passed": true
+    },
+    {
+      "name": "Primary button",
+      "ratio": 7.98,
+      "passed": true
+    }
+  ],
+  "pages": [
+    {
+      "path": "en/index.html",
+      "full_scroll_uncached_bytes": 1920648,
+      "passed": true
+    },
+    {
+      "path": "en/about/index.html",
+      "full_scroll_uncached_bytes": 1170709,
+      "passed": true
+    },
+    {
+      "path": "en/contact/index.html",
+      "full_scroll_uncached_bytes": 1171434,
+      "passed": true
+    },
+    {
+      "path": "en/privacy/index.html",
+      "full_scroll_uncached_bytes": 1170827,
+      "passed": true
+    },
+    {
+      "path": "en/services/index.html",
+      "full_scroll_uncached_bytes": 1172745,
+      "passed": true
+    },
+    {
+      "path": "en/work/index.html",
+      "full_scroll_uncached_bytes": 1913891,
+      "passed": true
+    },
+    {
+      "path": "en/work/future-interiors/index.html",
+      "full_scroll_uncached_bytes": 1801334,
+      "passed": true
+    },
+    {
+      "path": "en/work/spiky/index.html",
+      "full_scroll_uncached_bytes": 2860966,
+      "passed": true
+    },
+    {
+      "path": "ar/index.html",
+      "full_scroll_uncached_bytes": 1647459,
+      "passed": true
+    },
+    {
+      "path": "ar/about/index.html",
+      "full_scroll_uncached_bytes": 919841,
+      "passed": true
+    },
+    {
+      "path": "ar/contact/index.html",
+      "full_scroll_uncached_bytes": 920551,
+      "passed": true
+    },
+    {
+      "path": "ar/privacy/index.html",
+      "full_scroll_uncached_bytes": 921471,
+      "passed": true
+    },
+    {
+      "path": "ar/services/index.html",
+      "full_scroll_uncached_bytes": 922443,
+      "passed": true
+    },
+    {
+      "path": "ar/work/index.html",
+      "full_scroll_uncached_bytes": 1639750,
+      "passed": true
+    },
+    {
+      "path": "ar/work/future-interiors/index.html",
+      "full_scroll_uncached_bytes": 1480057,
+      "passed": true
+    },
+    {
+      "path": "ar/work/spiky/index.html",
+      "full_scroll_uncached_bytes": 2611629,
+      "passed": true
+    }
+  ],
+  "scripts": [
+    {
+      "file": "tokens.css",
+      "gzip_bytes": 1748,
+      "passed": true
+    },
+    {
+      "file": "site.css",
+      "gzip_bytes": 4066,
+      "passed": true
+    },
+    {
+      "file": "site.js",
+      "gzip_bytes": 2064,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Static transfer budgets and six text-color token pairs. Does not measure real latency, Core Web Vitals, assistive technology, or full WCAG conformance."
+}

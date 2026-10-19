@@ -1,0 +1,38 @@
+[
+  {
+    "test": "Mobile menu opens",
+    "passed": true
+  },
+  {
+    "test": "Escape closes menu and restores focus",
+    "passed": true
+  },
+  {
+    "test": "FAQ opens with keyboard",
+    "passed": true
+  },
+  {
+    "test": "Language switch stays on homepage",
+    "passed": true
+  },
+  {
+    "test": "Gallery opens dialog",
+    "passed": true
+  },
+  {
+    "test": "Escape closes gallery and restores focus",
+    "passed": true
+  },
+  {
+    "test": "Case study language switch stays on same case",
+    "passed": true
+  },
+  {
+    "test": "Empty form marks three required fields and focuses name",
+    "passed": true
+  },
+  {
+    "test": "Invalid contact remains on page and receives focus",
+    "passed": true
+  }
+]

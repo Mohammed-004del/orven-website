@@ -1,0 +1,9 @@
+{
+  "mode": "production",
+  "origin": "https://orven.orven-agency01.workers.dev",
+  "pages": 16,
+  "core_sections": 26,
+  "case_sections": 14,
+  "form_active": true,
+  "whatsapp_active": true
+}

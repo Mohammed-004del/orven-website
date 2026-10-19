@@ -1,0 +1,268 @@
+TAP version 13
+# Subtest: 30-day boundary uses elapsed time exactly
+ok 1 - 30-day boundary uses elapsed time exactly
+  ---
+  duration_ms: 3.2755
+  type: 'test'
+  ...
+# Subtest: recent real contact extends the clock
+ok 2 - recent real contact extends the clock
+  ---
+  duration_ms: 0.9921
+  type: 'test'
+  ...
+# Subtest: project conversion excludes automatic deletion
+ok 3 - project conversion excludes automatic deletion
+  ---
+  duration_ms: 0.9974
+  type: 'test'
+  ...
+# Subtest: legal hold excludes deletion and requires review
+ok 4 - legal hold excludes deletion and requires review
+  ---
+  duration_ms: 1.9278
+  type: 'test'
+  ...
+# Subtest: invalid/future clocks fail closed
+ok 5 - invalid/future clocks fail closed
+  ---
+  duration_ms: 0.9767
+  type: 'test'
+  ...
+# Subtest: automated self notification is not actual contact
+ok 6 - automated self notification is not actual contact
+  ---
+  duration_ms: 1.0199
+  type: 'test'
+  ...
+# Subtest: client reply and founder outbound count as real contact
+ok 7 - client reply and founder outbound count as real contact
+  ---
+  duration_ms: 1.2576
+  type: 'test'
+  ...
+# Subtest: dry run never deletes response or metadata
+ok 8 - dry run never deletes response or metadata
+  ---
+  duration_ms: 1.7508
+  type: 'test'
+  ...
+# Subtest: expired metadata is removed after all scoped copies
+ok 9 - expired metadata is removed after all scoped copies
+  ---
+  duration_ms: 1.4688
+  type: 'test'
+  ...
+# Subtest: failure in a registered copy keeps metadata for retry
+ok 10 - failure in a registered copy keeps metadata for retry
+  ---
+  duration_ms: 1.5582
+  type: 'test'
+  ...
+# Subtest: shared exports require manual review
+ok 11 - shared exports require manual review
+  ---
+  duration_ms: 1.1138
+  type: 'test'
+  ...
+# Subtest: exclusive registered export is deleted
+ok 12 - exclusive registered export is deleted
+  ---
+  duration_ms: 1.8757
+  type: 'test'
+  ...
+# Subtest: linked spreadsheet rows are removed by request ID only
+ok 13 - linked spreadsheet rows are removed by request ID only
+  ---
+  duration_ms: 1.0724
+  type: 'test'
+  ...
+# Subtest: owner administration rejects anonymous visitors
+ok 14 - owner administration rejects anonymous visitors
+  ---
+  duration_ms: 1.4283
+  type: 'test'
+  ...
+# Subtest: HMAC rejects forged signature before storage
+ok 15 - HMAC rejects forged signature before storage
+  ---
+  duration_ms: 2.6864
+  type: 'test'
+  ...
+# Subtest: signed intake saves once, reads back, and notifies once
+ok 16 - signed intake saves once, reads back, and notifies once
+  ---
+  duration_ms: 4.5315
+  type: 'test'
+  ...
+# Subtest: accepts validated data and authenticated saved receipt
+ok 17 - accepts validated data and authenticated saved receipt
+  ---
+  duration_ms: 46.9677
+  type: 'test'
+  ...
+# Subtest: normalizes Arabic numerals for WhatsApp
+ok 18 - normalizes Arabic numerals for WhatsApp
+  ---
+  duration_ms: 0.5605
+  type: 'test'
+  ...
+# Subtest: rejects empty name
+ok 19 - rejects empty name
+  ---
+  duration_ms: 0.315
+  type: 'test'
+  ...
+# Subtest: rejects invalid contact
+ok 20 - rejects invalid contact
+  ---
+  duration_ms: 0.3118
+  type: 'test'
+  ...
+# Subtest: rejects control injection
+ok 21 - rejects control injection
+  ---
+  duration_ms: 0.2441
+  type: 'test'
+  ...
+# Subtest: rejects oversized field
+ok 22 - rejects oversized field
+  ---
+  duration_ms: 0.107
+  type: 'test'
+  ...
+# Subtest: rejects honeypot
+ok 23 - rejects honeypot
+  ---
+  duration_ms: 0.0978
+  type: 'test'
+  ...
+# Subtest: rejects invalid service
+ok 24 - rejects invalid service
+  ---
+  duration_ms: 0.125
+  type: 'test'
+  ...
+# Subtest: rejects invalid locale
+ok 25 - rejects invalid locale
+  ---
+  duration_ms: 0.67
+  type: 'test'
+  ...
+# Subtest: rejects invalid UUID
+ok 26 - rejects invalid UUID
+  ---
+  duration_ms: 0.5247
+  type: 'test'
+  ...
+# Subtest: rejects old policy
+ok 27 - rejects old policy
+  ---
+  duration_ms: 0.2247
+  type: 'test'
+  ...
+# Subtest: rejects too fast
+ok 28 - rejects too fast
+  ---
+  duration_ms: 0.1429
+  type: 'test'
+  ...
+# Subtest: rejects stale session
+ok 29 - rejects stale session
+  ---
+  duration_ms: 0.0991
+  type: 'test'
+  ...
+# Subtest: blocks cross-origin submission
+ok 30 - blocks cross-origin submission
+  ---
+  duration_ms: 0.8973
+  type: 'test'
+  ...
+# Subtest: blocks multipart/simple form CSRF
+ok 31 - blocks multipart/simple form CSRF
+  ---
+  duration_ms: 0.6912
+  type: 'test'
+  ...
+# Subtest: rejects wrong method
+ok 32 - rejects wrong method
+  ---
+  duration_ms: 0.4389
+  type: 'test'
+  ...
+# Subtest: fails closed on absent secrets
+ok 33 - fails closed on absent secrets
+  ---
+  duration_ms: 0.7668
+  type: 'test'
+  ...
+# Subtest: limits request body bytes
+ok 34 - limits request body bytes
+  ---
+  duration_ms: 7.5157
+  type: 'test'
+  ...
+# Subtest: rejects malformed JSON
+ok 35 - rejects malformed JSON
+  ---
+  duration_ms: 2.1195
+  type: 'test'
+  ...
+# Subtest: applies IP and global limits
+ok 36 - applies IP and global limits
+  ---
+  duration_ms: 1.1736
+  type: 'test'
+  ...
+# Subtest: rejects invalid Turnstile result {"success":false}
+ok 37 - rejects invalid Turnstile result {"success":false}
+  ---
+  duration_ms: 2.0004
+  type: 'test'
+  ...
+# Subtest: rejects invalid Turnstile result {"success":true,"hostname":"evil.invalid","action":"inquiry"}
+ok 38 - rejects invalid Turnstile result {"success":true,"hostname":"evil.invalid","action":"inquiry"}
+  ---
+  duration_ms: 1.8209
+  type: 'test'
+  ...
+# Subtest: rejects invalid Turnstile result {"success":true,"hostname":"orven.example","action":"other"}
+ok 39 - rejects invalid Turnstile result {"success":true,"hostname":"orven.example","action":"other"}
+  ---
+  duration_ms: 1.3569
+  type: 'test'
+  ...
+# Subtest: never acknowledges unconfirmed save {"received":false}
+ok 40 - never acknowledges unconfirmed save {"received":false}
+  ---
+  duration_ms: 2.3108
+  type: 'test'
+  ...
+# Subtest: never acknowledges unconfirmed save {"received":true,"requestId":"1a61bf14-d32a-4a32-8bac-e32137ece151","receipt":"forged"}
+ok 41 - never acknowledges unconfirmed save {"received":true,"requestId":"1a61bf14-d32a-4a32-8bac-e32137ece151","receipt":"forged"}
+  ---
+  duration_ms: 3.8826
+  type: 'test'
+  ...
+# Subtest: never acknowledges unconfirmed save {"received":true,"requestId":"wrong","receipt":"forged"}
+ok 42 - never acknowledges unconfirmed save {"received":true,"requestId":"wrong","receipt":"forged"}
+  ---
+  duration_ms: 1.6536
+  type: 'test'
+  ...
+# Subtest: network error returns retryable failure without sensitive details
+ok 43 - network error returns retryable failure without sensitive details
+  ---
+  duration_ms: 1.3221
+  type: 'test'
+  ...
+1..43
+# tests 43
+# suites 0
+# pass 43
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 196.5681

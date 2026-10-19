@@ -1,0 +1,290 @@
+[
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 9,
+    "url": "/en/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 6,
+    "url": "/en/services/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 3,
+    "url": "/en/work/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 4,
+    "url": "/en/about/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 4,
+    "url": "/en/contact/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 7,
+    "url": "/en/work/spiky/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 7,
+    "url": "/en/work/future-interiors/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 0,
+    "url": "/en/privacy/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 9,
+    "url": "/ar/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 6,
+    "url": "/ar/services/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 3,
+    "url": "/ar/work/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 4,
+    "url": "/ar/about/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 4,
+    "url": "/ar/contact/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 7,
+    "url": "/ar/work/spiky/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 7,
+    "url": "/ar/work/future-interiors/",
+    "width": 1440
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 1440,
+    "sections": 0,
+    "url": "/ar/privacy/",
+    "width": 1440
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 9,
+    "url": "/en/",
+    "width": 390
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 6,
+    "url": "/en/services/",
+    "width": 390
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 3,
+    "url": "/en/work/",
+    "width": 390
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 4,
+    "url": "/en/about/",
+    "width": 390
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 4,
+    "url": "/en/contact/",
+    "width": 390
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 7,
+    "url": "/en/work/spiky/",
+    "width": 390
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 7,
+    "url": "/en/work/future-interiors/",
+    "width": 390
+  },
+  {
+    "dir": "ltr",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 0,
+    "url": "/en/privacy/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 9,
+    "url": "/ar/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 6,
+    "url": "/ar/services/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 3,
+    "url": "/ar/work/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 4,
+    "url": "/ar/about/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 4,
+    "url": "/ar/contact/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 7,
+    "url": "/ar/work/spiky/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 7,
+    "url": "/ar/work/future-interiors/",
+    "width": 390
+  },
+  {
+    "dir": "rtl",
+    "h1": 1,
+    "missingImages": [],
+    "scrollWidth": 390,
+    "sections": 0,
+    "url": "/ar/privacy/",
+    "width": 390
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "file": "spiky-public-cover-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\Spiky — Case Study\\spiky screenshots\\Screenshot 2026-10-12 173400.png",
+    "sha256": "60fcc1a1adfe3a215972fde0cdbb43ab08cbb223fcbcd895dfc1b325a51d7e53",
+    "kind": "public marketing screenshot",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-public-mobile-hero-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\Spiky — Case Study\\spiky screenshots\\Screenshot 2026-10-12 174020.png",
+    "sha256": "715a6e09fb627f37fb6ed0958b02f7644f9aac34b0bfbf9deb2369007d335298",
+    "kind": "public marketing screenshot",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-public-contact-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\Spiky — Case Study\\spiky screenshots\\Screenshot 2026-10-12 173626.png",
+    "sha256": "9d005b5edb370ba0692a869b8a545928e94da40c1bfb51bc7c7cf08b02ebca3f",
+    "kind": "public marketing screenshot",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-public-mobile-package-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\Spiky — Case Study\\spiky screenshots\\Screenshot 2026-10-12 174314.png",
+    "sha256": "47a306427e8d5af5e0b91bd954b1540d33b719c2af58437e4bd1eea1e3f64b26",
+    "kind": "public marketing screenshot",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-public-coach-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\Spiky — Case Study\\spiky screenshots\\Screenshot 2026-10-12 173501.png",
+    "sha256": "f8b26b7c3b666d92821e3a378c75445db54d020923d47ebcd6b7cc7b578c7ea1",
+    "kind": "public marketing screenshot",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-public-faq-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\Spiky — Case Study\\spiky screenshots\\Screenshot 2026-10-12 174810.png",
+    "sha256": "3a53878e84a4d3e53bbae69983bb6201b7006fa443681de6bfe7d0aaa7163b0b",
+    "kind": "public marketing screenshot",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-dashboard-redacted-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\ORVEN_Portfolio_Wireframe_Ready (1)\\assets\\SPK_01_dashboard_redacted.png",
+    "sha256": "533c0e2b04a053b5af99c916110ffe9a5220b8b19ffdc791724339d5bd72dd49",
+    "kind": "pre-redacted source dashboard; visible anonymous aggregate counts",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-client-recipes-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\ORVEN_Portfolio_Wireframe_Ready (1)\\assets\\SPK_05_training.png",
+    "sha256": "456b65e55e26f2e25d2a31446fb8ab9e3d3ffdd6c2619c0a75eac21ad9d8ef30",
+    "kind": "generic recipe library; source filename was inaccurate",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "spiky-client-exercise-ar.png",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\ORVEN_Portfolio_Wireframe_Ready (1)\\assets\\SPK_06_exercise_video.png",
+    "sha256": "b3afa5205ec8fafb6fd466fa3864306cac95767f0b64874a00ab5c58594ce663",
+    "kind": "exercise demonstration; no name/contact information",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-ar-01.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 7,
+    "embedded_image": "X39.jpg",
+    "size": [
+      1440,
+      1899
+    ],
+    "sha256": "e4ee25ead16e3b67a931f6d3c7acb4fa972c79233962f5757ad11b1fda7dd251",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-ar-02.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 8,
+    "embedded_image": "X42.jpg",
+    "size": [
+      1440,
+      1849
+    ],
+    "sha256": "f5665d7a004be28f25863a3b54f843e9bfaa9ec31051d560f7773dbc6afe466b",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-ar-03.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 9,
+    "embedded_image": "X45.jpg",
+    "size": [
+      1440,
+      1691
+    ],
+    "sha256": "01f27173b70354458be13bd5a7ca0a8445ec0e0ed5ef3687efbf8be3a9166e6c",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-ar-04.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 10,
+    "embedded_image": "X48.jpg",
+    "size": [
+      1440,
+      970
+    ],
+    "sha256": "d5e383e42f8a3bb8de8ef1a903c8fbc5b94e8722779db9e5708434bc05ffa2eb",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "ar",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-en-01.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 11,
+    "embedded_image": "X51.jpg",
+    "size": [
+      1440,
+      1899
+    ],
+    "sha256": "ca973f71b9bae7144ee27735033e0f90cc27050968f18d385eea5e296ec09a73",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "en",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-en-02.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 12,
+    "embedded_image": "X54.jpg",
+    "size": [
+      1440,
+      1899
+    ],
+    "sha256": "bb7f75f42248f48e9dca3aeacfd9fd2730ef528e5e6c1438e872d0d35b65d264",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "en",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-en-03.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 13,
+    "embedded_image": "X57.jpg",
+    "size": [
+      1440,
+      1801
+    ],
+    "sha256": "8afd8247ef9eb1fffc6def3f68ad8ae0b25d5ae73d3b521c6172326b5f5485db",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "en",
+    "unaltered": true
+  },
+  {
+    "file": "future-public-en-04.jpg",
+    "source": "C:\\Users\\moham\\Downloads\\ORVEN\\future-interiors-case-study.pdf",
+    "pdf_page": 14,
+    "embedded_image": "X60.jpg",
+    "size": [
+      1440,
+      971
+    ],
+    "sha256": "aa986fd5229be8d2ba4b7b333a003a342d9f6d04f3ec1cf557f651d8faaabe15",
+    "kind": "public website screenshot extracted as unchanged embedded JPEG bytes",
+    "locale": "en",
+    "unaltered": true
+  }
+]

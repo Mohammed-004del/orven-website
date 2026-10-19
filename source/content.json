@@ -1,0 +1,1136 @@
+{
+  "labels": {
+    "home": {
+      "en": "Home",
+      "ar": "الرئيسية"
+    },
+    "work": {
+      "en": "Work",
+      "ar": "أعمالنا"
+    },
+    "services": {
+      "en": "Services",
+      "ar": "خدماتنا"
+    },
+    "about": {
+      "en": "About",
+      "ar": "من نحن"
+    },
+    "contact": {
+      "en": "Contact",
+      "ar": "تواصل معنا"
+    },
+    "privacy": {
+      "en": "Privacy Policy",
+      "ar": "سياسة الخصوصية"
+    },
+    "start": {
+      "en": "Start a Project",
+      "ar": "ابدأ مشروعك"
+    },
+    "viewWork": {
+      "en": "View Our Work",
+      "ar": "شاهد أعمالنا"
+    },
+    "allWork": {
+      "en": "View All Work",
+      "ar": "شاهد جميع أعمالنا"
+    },
+    "exploreCase": {
+      "en": "Explore Case Study",
+      "ar": "اكتشف تفاصيل المشروع"
+    },
+    "viewCase": {
+      "en": "View Case Study",
+      "ar": "اطّلع على دراسة الحالة"
+    },
+    "allServices": {
+      "en": "Explore All Services",
+      "ar": "استكشف جميع خدماتنا"
+    },
+    "whatsapp": {
+      "en": "WhatsApp",
+      "ar": "واتساب"
+    },
+    "email": {
+      "en": "Email",
+      "ar": "البريد الإلكتروني"
+    },
+    "call": {
+      "en": "Book a Call",
+      "ar": "احجز مكالمة"
+    },
+    "skip": {
+      "en": "Skip to content",
+      "ar": "انتقل إلى المحتوى"
+    },
+    "menu": {
+      "en": "Open menu",
+      "ar": "افتح القائمة"
+    },
+    "close": {
+      "en": "Close",
+      "ar": "إغلاق"
+    },
+    "live": {
+      "en": "Visit Live Project",
+      "ar": "زيارة المشروع"
+    },
+    "related": {
+      "en": "Related project",
+      "ar": "مشروع آخر"
+    },
+    "gallery": {
+      "en": "Project Gallery",
+      "ar": "صور من المشروع"
+    },
+    "next": {
+      "en": "Next image",
+      "ar": "الصورة التالية"
+    },
+    "previous": {
+      "en": "Previous image",
+      "ar": "الصورة السابقة"
+    },
+    "zoom": {
+      "en": "View image",
+      "ar": "عرض الصورة"
+    },
+    "credit": {
+      "en": "Selected work by the team behind ORVEN.",
+      "ar": "مختارات من أعمال الفريق وراء ORVEN."
+    },
+    "footer": {
+      "en": "Thoughtful websites and web applications, built around real business needs.",
+      "ar": "نصمّم ونطوّر مواقع وتطبيقات ويب مدروسة، تُلبّي احتياجات الأعمال الحقيقية."
+    },
+    "rights": {
+      "en": "All rights reserved.",
+      "ar": "جميع الحقوق محفوظة."
+    },
+    "notReady": {
+      "en": "This contact channel is not available yet. Please email us.",
+      "ar": "وسيلة التواصل هذه غير متاحة حاليًا. يُرجى مراسلتنا عبر البريد الإلكتروني."
+    },
+    "preview": {
+      "en": "Preview — launch details are being finalized.",
+      "ar": "معاينة — تفاصيل الإطلاق قيد الاستكمال."
+    },
+    "arabicOnly": {
+      "en": "Arabic-only product · Original screenshots",
+      "ar": "منتج باللغة العربية فقط · صور أصلية"
+    },
+    "lead": {
+      "en": "Project lead",
+      "ar": "مسؤول المشروع"
+    },
+    "cofounder": {
+      "en": "ORVEN Co-Founder",
+      "ar": "أحد مؤسسي ORVEN"
+    },
+    "completed": {
+      "en": "Completed & Delivered",
+      "ar": "مكتمل وتم تسليمه"
+    },
+    "feedbackSummary": {
+      "en": "Client feedback · Edited summary",
+      "ar": "رأي العميل · ملخص محرر"
+    },
+    "translatedQuote": {
+      "en": "Translated excerpt · Arabic original below",
+      "ar": "مقتطف أصلي من تقييم العميل"
+    },
+    "screen": {
+      "en": "Original project screenshot",
+      "ar": "لقطة أصلية من المشروع"
+    }
+  },
+  "form": {
+    "name": {
+      "en": "Name",
+      "ar": "الاسم"
+    },
+    "contact": {
+      "en": "Email or WhatsApp",
+      "ar": "البريد الإلكتروني أو رقم واتساب"
+    },
+    "service": {
+      "en": "What do you need?",
+      "ar": "ما الخدمة التي تحتاج إليها؟"
+    },
+    "details": {
+      "en": "Tell us about your project",
+      "ar": "حدّثنا عن مشروعك"
+    },
+    "optional": {
+      "en": "Optional",
+      "ar": "اختياري"
+    },
+    "select": {
+      "en": "Select a service",
+      "ar": "اختر نوع الخدمة"
+    },
+    "namePlaceholder": {
+      "en": "Your name",
+      "ar": "اسمك"
+    },
+    "contactPlaceholder": {
+      "en": "How can we reach you?",
+      "ar": "كيف يمكننا التواصل معك؟"
+    },
+    "detailsPlaceholder": {
+      "en": "Your idea, goals, or the problem you're trying to solve...",
+      "ar": "فكرة المشروع أو أهدافك أو المشكلة التي ترغب في حلّها…"
+    },
+    "submit": {
+      "en": "Send Project Inquiry",
+      "ar": "أرسل تفاصيل مشروعك"
+    },
+    "sending": {
+      "en": "Sending…",
+      "ar": "جارٍ الإرسال…"
+    },
+    "success": {
+      "en": "Your inquiry has been sent. We'll get back to you.",
+      "ar": "وصلتنا رسالتك. سنتواصل معك."
+    },
+    "error": {
+      "en": "Something went wrong. Please try again or contact us on WhatsApp.",
+      "ar": "تعذّر إرسال رسالتك. يُرجى المحاولة مجددًا أو التواصل معنا عبر واتساب."
+    },
+    "required": {
+      "en": "This field is required.",
+      "ar": "هذا الحقل مطلوب."
+    },
+    "invalid": {
+      "en": "Enter a valid email or WhatsApp number.",
+      "ar": "أدخل بريدًا إلكترونيًا أو رقم واتساب صحيحًا."
+    },
+    "unconfigured": {
+      "en": "The form is not accepting inquiries yet. No data was sent. Please contact us by email.",
+      "ar": "النموذج غير متاح لاستقبال الاستفسارات حاليًا. لم تُرسل أي بيانات. يُرجى التواصل معنا عبر البريد الإلكتروني."
+    },
+    "privacy": {
+      "en": "We'll only use your details to respond to your inquiry.",
+      "ar": "نستخدم بياناتك للرد على استفسارك فقط."
+    },
+    "tooLong": {
+      "en": "Please shorten your message.",
+      "ar": "يُرجى اختصار الرسالة."
+    },
+    "verification": {
+      "en": "Please complete the security check, then send your inquiry.",
+      "ar": "يُرجى إكمال التحقّق الأمني، ثم إرسال استفسارك."
+    }
+  },
+  "projects": {
+    "spiky": {
+      "name": "Spiky",
+      "sector": {
+        "en": "Fitness & Nutrition · Web Application",
+        "ar": "التدريب والتغذية · تطبيق ويب"
+      },
+      "homeBody": {
+        "en": "A connected coaching platform bringing training plans, nutrition, and an interactive client experience together.",
+        "ar": "منصة مترابطة تجمع خطط التدريب والتغذية وتجربة تفاعلية للمتدرّب."
+      },
+      "body": {
+        "en": "A coaching platform that brings training, nutrition planning, and the client experience together in one place.",
+        "ar": "منصة تجمع التدريب والتخطيط الغذائي وتجربة المتدرّب في مكان واحد."
+      },
+      "lead": {
+        "en": "Mohamed Hamed",
+        "ar": "محمد حامد"
+      },
+      "cover": {
+        "en": "spiky-public-cover-ar.png",
+        "ar": "spiky-public-cover-ar.png"
+      },
+      "live": "https://spiky-coaching.vercel.app/"
+    },
+    "future-interiors": {
+      "name": "Future Interiors",
+      "sector": {
+        "en": "Interior Finishing · Business Platform",
+        "ar": "التشطيبات الداخلية · منصة لإدارة المشروعات"
+      },
+      "homeBody": {
+        "en": "A business website, client portal, and project management dashboard connected in one system.",
+        "ar": "موقع تعريفي وبوابة للعملاء ولوحة تحكّم لإدارة المشروعات، مترابطة في نظام واحد."
+      },
+      "body": {
+        "en": "A connected platform combining a business website, a client portal, and tools to manage finishing projects.",
+        "ar": "منصة مترابطة تجمع موقع الشركة وبوابة للعملاء وأدوات لإدارة مشروعات التشطيب."
+      },
+      "lead": {
+        "en": "Mohamed El-Hadidy",
+        "ar": "محمد الحديدي"
+      },
+      "cover": {
+        "en": "future-public-en-01.jpg",
+        "ar": "future-public-ar-01.jpg"
+      },
+      "live": "https://future-interiors.vercel.app/"
+    }
+  },
+  "titles": {
+    "home": {
+      "en": "ORVEN — Websites & Web Apps Built for Your Business",
+      "ar": "ORVEN — تصميم وتطوير المواقع وتطبيقات الويب"
+    },
+    "services": {
+      "en": "Website & Web App Development Services — ORVEN",
+      "ar": "خدمات تصميم المواقع وتطوير تطبيقات الويب — ORVEN"
+    },
+    "work": {
+      "en": "Selected Projects & Case Studies — ORVEN",
+      "ar": "أعمالنا ومشروعاتنا — ORVEN"
+    },
+    "about": {
+      "en": "About ORVEN — The People Behind the Work",
+      "ar": "من نحن — تعرّف على فريق ORVEN"
+    },
+    "contact": {
+      "en": "Contact ORVEN — Let's Talk About Your Project",
+      "ar": "تواصل مع ORVEN — لنناقش مشروعك"
+    },
+    "spiky": {
+      "en": "Spiky — Fitness Coaching Platform Case Study",
+      "ar": "Spiky — دراسة حالة لمنصة تدريب وتغذية"
+    },
+    "future-interiors": {
+      "en": "Future Interiors — Business Platform Case Study",
+      "ar": "Future Interiors — دراسة حالة لمنصة إدارة مشروعات التشطيب"
+    },
+    "privacy": {
+      "en": "Privacy Policy — ORVEN",
+      "ar": "سياسة الخصوصية — ORVEN"
+    }
+  },
+  "pages": {
+    "home": [
+      {
+        "kind": "hero",
+        "title": {
+          "en": "Digital experiences.\nBuilt around your business.",
+          "ar": "تجارب رقمية.\nمصمّمة حول احتياجات أعمالك."
+        },
+        "body": {
+          "en": "We design and develop websites and web applications that make sense for your business, your customers, and the way you work.",
+          "ar": "نصمّم ونطوّر مواقع وتطبيقات ويب تناسب طبيعة نشاطك وعملاءك وطريقة عملك."
+        },
+        "label": {
+          "en": "WEB DESIGN & DEVELOPMENT",
+          "ar": "تصميم وتطوير المواقع وتطبيقات الويب"
+        },
+        "actions": [
+          "start",
+          "viewWork"
+        ]
+      },
+      {
+        "kind": "statement",
+        "title": {
+          "en": "The right solution starts with the right problem.",
+          "ar": "الحل المناسب يبدأ بفهم المشكلة."
+        },
+        "body": {
+          "en": "Before we design or develop anything, we take the time to understand your business, the challenges you're facing, and what you actually need. That way, every decision has a reason behind it.",
+          "ar": "قبل أن نصمّم أو نطوّر أي شيء، نأخذ الوقت لفهم نشاطك والتحديات التي تواجهها وما تحتاجه فعلًا. ليكون لكل قرار في المشروع سبب واضح."
+        },
+        "label": {
+          "en": "OUR APPROACH",
+          "ar": "منهجنا"
+        }
+      },
+      {
+        "kind": "services",
+        "title": {
+          "en": "What we build.",
+          "ar": "ماذا نقدّم؟"
+        },
+        "body": {
+          "en": "From a website that introduces your business to a web app that helps you run it, we build what fits your needs.",
+          "ar": "من موقع يعرّف بنشاطك إلى تطبيق ويب يساعدك على إدارته، نبني ما يناسب احتياجاتك."
+        },
+        "label": {
+          "en": "WHAT WE DO",
+          "ar": "خدماتنا"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "Websites.",
+              "ar": "المواقع الإلكترونية."
+            },
+            "body": {
+              "en": "Give your business a strong online presence with a website that's clear, easy to use, and built around your customers.",
+              "ar": "امنح نشاطك حضورًا قويًا على الإنترنت، بموقع واضح وسهل الاستخدام ومصمّم حول احتياجات عملائك."
+            },
+            "cta": {
+              "en": "Explore Websites",
+              "ar": "اكتشف خدمة المواقع"
+            },
+            "target": "services/#websites"
+          },
+          {
+            "title": {
+              "en": "Web Applications.",
+              "ar": "تطبيقات الويب."
+            },
+            "body": {
+              "en": "Make everyday work easier with custom dashboards, client portals, and systems designed for your business.",
+              "ar": "سهّل العمل اليومي بلوحات تحكّم وبوابات للعملاء وأنظمة مصمّمة لطبيعة نشاطك."
+            },
+            "cta": {
+              "en": "Explore Web Apps",
+              "ar": "اكتشف تطبيقات الويب"
+            },
+            "target": "services/#applications"
+          }
+        ]
+      },
+      {
+        "kind": "projects",
+        "title": {
+          "en": "A closer look at our work.",
+          "ar": "نظرة أقرب على أعمالنا."
+        },
+        "body": {
+          "en": "A closer look at what we've built — from a digital coaching platform to a connected project management experience.",
+          "ar": "تعرّف على بعض ما نفّذه فريقنا، من منصة تدريب رقمية إلى تجربة مترابطة لإدارة المشروعات."
+        },
+        "label": {
+          "en": "SELECTED WORK",
+          "ar": "أعمال مختارة"
+        },
+        "theme": "light"
+      },
+      {
+        "kind": "cards",
+        "title": {
+          "en": "Not just how it looks. How it works.",
+          "ar": "جودة التصميم تبدأ من طريقة عمله."
+        },
+        "body": {
+          "en": "A website is only one part of the picture. What matters is how well it works for your business, the people using it, and the team managing it.",
+          "ar": "الموقع جزء من صورة أكبر. ما يهم هو مدى ملاءمته لنشاطك، وسهولة استخدامه لعملائك، وفاعليته للفريق الذي يديره."
+        },
+        "label": {
+          "en": "WHY ORVEN",
+          "ar": "لماذا ORVEN؟"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "We look at the bigger picture.",
+              "ar": "ننظر إلى الصورة الكاملة."
+            },
+            "body": {
+              "en": "We take time to understand your business and what the solution needs to achieve.",
+              "ar": "نأخذ الوقت لفهم نشاطك والأهداف التي ينبغي أن يحقّقها الحل."
+            }
+          },
+          {
+            "title": {
+              "en": "Design with a reason.",
+              "ar": "تصميم له هدف."
+            },
+            "body": {
+              "en": "Clear layouts and thoughtful experiences, shaped around the people who will use them.",
+              "ar": "واجهات واضحة وتجارب مدروسة، مصمّمة حول احتياجات من يستخدمونها."
+            }
+          },
+          {
+            "title": {
+              "en": "Built to work, not just look good.",
+              "ar": "جودة تظهر في الاستخدام."
+            },
+            "body": {
+              "en": "We pay attention to functionality, performance, and the details that matter in everyday use.",
+              "ar": "نهتم بالوظائف والأداء والتفاصيل التي تصنع فرقًا في الاستخدام اليومي."
+            }
+          },
+          {
+            "title": {
+              "en": "We're here after launch, too.",
+              "ar": "نواصل معك بعد الإطلاق."
+            },
+            "body": {
+              "en": "Clear communication throughout the project, with support and maintenance options after delivery.",
+              "ar": "تواصل واضح طوال المشروع، وخيارات للدعم والصيانة بعد التسليم وفق الاتفاق."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "process",
+        "title": {
+          "en": "Here's how we make it happen.",
+          "ar": "من الفكرة إلى التنفيذ."
+        },
+        "body": {
+          "en": "You'll know what we're working on, why it matters, and what comes next.",
+          "ar": "تعرف ما نعمل عليه، ولماذا نعمل عليه، وما الخطوة التالية."
+        },
+        "label": {
+          "en": "OUR PROCESS",
+          "ar": "خطوات العمل"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "Discover",
+              "ar": "نفهم"
+            },
+            "body": {
+              "en": "We get to know your business, your goals, and what you need.",
+              "ar": "نتعرّف على نشاطك وأهدافك واحتياجات مشروعك."
+            }
+          },
+          {
+            "title": {
+              "en": "Plan",
+              "ar": "نخطط"
+            },
+            "body": {
+              "en": "We define the scope, priorities, and a clear direction for the project.",
+              "ar": "نحدّد نطاق العمل والأولويات ومسارًا واضحًا للمشروع."
+            }
+          },
+          {
+            "title": {
+              "en": "Design",
+              "ar": "نصمّم"
+            },
+            "body": {
+              "en": "We shape the experience and interfaces around your users.",
+              "ar": "نصمّم التجربة والواجهات وفق احتياجات المستخدمين."
+            }
+          },
+          {
+            "title": {
+              "en": "Develop & Test",
+              "ar": "نطوّر ونختبر"
+            },
+            "body": {
+              "en": "We build the solution and test its functionality across devices.",
+              "ar": "ننفّذ الحل ونختبر وظائفه على الأجهزة المختلفة."
+            }
+          },
+          {
+            "title": {
+              "en": "Launch & Support",
+              "ar": "نطلق وندعم"
+            },
+            "body": {
+              "en": "We launch your project and provide support based on our agreement.",
+              "ar": "نطلق مشروعك ونقدّم الدعم وفق الاتفاق."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "reviews",
+        "title": {
+          "en": "From the people we've worked with.",
+          "ar": "من عملائنا في المشروعات السابقة."
+        },
+        "body": {
+          "en": "A few words from the people behind the projects.",
+          "ar": "كلمات من أصحاب المشروعات الذين عملنا معهم."
+        },
+        "label": {
+          "en": "CLIENT FEEDBACK",
+          "ar": "آراء العملاء"
+        },
+        "theme": "light"
+      },
+      {
+        "kind": "faq",
+        "title": {
+          "en": "Frequently asked questions.",
+          "ar": "الأسئلة الشائعة."
+        },
+        "body": {
+          "en": "Here's what to expect when working with ORVEN.",
+          "ar": "ما تحتاج إلى معرفته قبل العمل مع ORVEN."
+        },
+        "label": {
+          "en": "FAQ",
+          "ar": "أسئلة شائعة"
+        },
+        "theme": "light",
+        "items": [
+          {
+            "title": {
+              "en": "How much will my project cost?",
+              "ar": "كيف تُحدَّد تكلفة المشروع؟"
+            },
+            "body": {
+              "en": "Every project is different. Once we understand what you need, we'll provide a quote based on the scope and requirements.",
+              "ar": "لكل مشروع متطلباته. بعد فهم احتياجاتك، نقدّم عرض سعر بناءً على نطاق العمل والتفاصيل المطلوبة."
+            }
+          },
+          {
+            "title": {
+              "en": "How long does a project take?",
+              "ar": "كم يستغرق تنفيذ المشروع؟"
+            },
+            "body": {
+              "en": "It depends on the size and complexity of the project. We'll discuss the expected timeline with you before getting started.",
+              "ar": "تعتمد المدة على حجم المشروع ودرجة تعقيده. نناقش معك الجدول الزمني المتوقع قبل البدء."
+            }
+          },
+          {
+            "title": {
+              "en": "Can I request changes during the project?",
+              "ar": "هل يمكنني طلب تعديلات أثناء التنفيذ؟"
+            },
+            "body": {
+              "en": "Yes. We'll agree on the scope and review stages from the start, so feedback and revisions are handled clearly. Any additional work outside the agreed scope will be discussed first.",
+              "ar": "نعم. نتفق منذ البداية على نطاق العمل ومراحل المراجعة، لتكون الملاحظات والتعديلات واضحة. ونناقش أي عمل إضافي خارج النطاق المتفق عليه قبل تنفيذه."
+            }
+          },
+          {
+            "title": {
+              "en": "What happens after launch?",
+              "ar": "ماذا يحدث بعد الإطلاق؟"
+            },
+            "body": {
+              "en": "We provide an agreed period of maintenance and support after delivery. Ongoing maintenance and additional changes can be arranged separately.",
+              "ar": "نقدّم فترة متفقًا عليها للصيانة والدعم بعد التسليم. ويمكن الاتفاق بصورة منفصلة على الصيانة المستمرة والتعديلات الإضافية."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "cta",
+        "title": {
+          "en": "Have something in mind?",
+          "ar": "هل لديك فكرة ترغب في تنفيذها؟"
+        },
+        "body": {
+          "en": "Tell us what you have in mind. We'll help you figure out the right next step for your business.",
+          "ar": "شاركنا فكرتك، وسنساعدك على تحديد الخطوة المناسبة لنشاطك."
+        },
+        "label": {
+          "en": "LET'S TALK",
+          "ar": "لنتحدث"
+        }
+      }
+    ],
+    "services": [
+      {
+        "kind": "hero",
+        "title": {
+          "en": "Different businesses.\nDifferent needs.",
+          "ar": "لكل نشاط طبيعته.\nولكل مشروع احتياجاته."
+        },
+        "body": {
+          "en": "Whether you need a new website, a better version of your current one, or a custom web application, we help you find and build the solution that fits your business.",
+          "ar": "سواء كنت تحتاج إلى موقع جديد، أو تطوير موقعك الحالي، أو تطبيق ويب مخصّص، نساعدك على اختيار الحل المناسب لنشاطك وتنفيذه."
+        },
+        "label": {
+          "en": "OUR SERVICES",
+          "ar": "خدماتنا"
+        },
+        "actions": [
+          "start",
+          "viewWork"
+        ]
+      },
+      {
+        "kind": "detail",
+        "title": {
+          "en": "A website that actually does its job.",
+          "ar": "موقع يؤدّي دوره بفاعلية."
+        },
+        "body": {
+          "en": "Your website should help people understand what you do, explore what you offer, and take the next step with confidence. We design and develop clear, responsive websites built around your business and your customers.",
+          "ar": "ينبغي أن يساعد موقعك الزائر على فهم نشاطك واستكشاف خدماتك واتخاذ الخطوة التالية بثقة. نصمّم ونطوّر مواقع واضحة ومتوافقة مع الأجهزة المختلفة، وفق احتياجات نشاطك وعملائك."
+        },
+        "label": {
+          "en": "WEBSITE DEVELOPMENT",
+          "ar": "تصميم وتطوير المواقع"
+        },
+        "id": "websites",
+        "items": [
+          {
+            "en": "Business Websites",
+            "ar": "مواقع الشركات والأنشطة التجارية"
+          },
+          {
+            "en": "Landing Pages",
+            "ar": "صفحات الهبوط"
+          },
+          {
+            "en": "Portfolio Websites",
+            "ar": "مواقع عرض الأعمال"
+          },
+          {
+            "en": "Website Redesigns & Improvements",
+            "ar": "إعادة تصميم المواقع الحالية وتحسينها"
+          }
+        ],
+        "cta": {
+          "en": "Discuss Your Website",
+          "ar": "لنتحدث عن موقعك"
+        }
+      },
+      {
+        "kind": "detail",
+        "title": {
+          "en": "Some businesses need their own system.",
+          "ar": "بعض الأعمال تحتاج إلى نظام خاص بها."
+        },
+        "body": {
+          "en": "When spreadsheets, messages, and disconnected tools start getting in the way, a custom web application can bring things together. We build dashboards, client portals, and business systems around the way your team actually works.",
+          "ar": "عندما تصبح الجداول والرسائل والأدوات المنفصلة عائقًا أمام العمل، يمكن لتطبيق ويب مخصّص أن يجمعها في تجربة واحدة. نبني لوحات تحكّم وبوابات للعملاء وأنظمة تناسب طريقة عمل فريقك."
+        },
+        "label": {
+          "en": "WEB APPLICATION DEVELOPMENT",
+          "ar": "تطوير تطبيقات الويب"
+        },
+        "id": "applications",
+        "theme": "light",
+        "items": [
+          {
+            "en": "Admin Dashboards",
+            "ar": "لوحات تحكّم الإدارة"
+          },
+          {
+            "en": "Client Portals",
+            "ar": "بوابات العملاء"
+          },
+          {
+            "en": "Booking & Management Systems",
+            "ar": "أنظمة الحجز والإدارة"
+          },
+          {
+            "en": "Custom Business Tools",
+            "ar": "أدوات مخصّصة للأعمال"
+          }
+        ],
+        "cta": {
+          "en": "Discuss Your Web App",
+          "ar": "لنتحدث عن تطبيقك"
+        },
+        "examples": true
+      },
+      {
+        "kind": "cards",
+        "title": {
+          "en": "What happens after launch matters, too.",
+          "ar": "ما بعد الإطلاق يستحق الاهتمام أيضًا."
+        },
+        "body": {
+          "en": "Getting your website or web application online is only part of the process. We also help with hosting, maintenance, and technical support, so you know what happens after delivery.",
+          "ar": "إطلاق موقعك أو تطبيقك جزء من العمل. نساعدك أيضًا في الاستضافة والصيانة والدعم الفني، لتكون الخطوات التالية للتسليم واضحة."
+        },
+        "label": {
+          "en": "HOSTING, MAINTENANCE & SUPPORT",
+          "ar": "الاستضافة والصيانة والدعم الفني"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "Hosting",
+              "ar": "الاستضافة"
+            },
+            "body": {
+              "en": "Hosting is included in the project price for the agreed coverage period, with the details outlined before launch.",
+              "ar": "يشمل سعر المشروع الاستضافة للفترة المتفق عليها، مع توضيح تفاصيل التغطية قبل الإطلاق."
+            }
+          },
+          {
+            "title": {
+              "en": "Maintenance",
+              "ar": "الصيانة"
+            },
+            "body": {
+              "en": "An agreed period of maintenance is included after delivery. Further maintenance or changes can be arranged separately.",
+              "ar": "تشمل الخدمة فترة صيانة متفقًا عليها بعد التسليم. ويمكن الاتفاق بصورة منفصلة على الصيانة الإضافية أو التعديلات الجديدة."
+            }
+          },
+          {
+            "title": {
+              "en": "Technical Support",
+              "ar": "الدعم الفني"
+            },
+            "body": {
+              "en": "If you need help after launch, we're available through the support arrangements defined in your agreement.",
+              "ar": "إذا احتجت إلى مساعدة بعد الإطلاق، نقدّم الدعم وفق الترتيبات المحدّدة في اتفاقك."
+            }
+          }
+        ],
+        "cta": {
+          "en": "Ask About Support",
+          "ar": "استفسر عن الدعم الفني"
+        }
+      },
+      {
+        "kind": "process",
+        "title": {
+          "en": "Here's how your idea takes shape.",
+          "ar": "كيف تتحوّل فكرتك إلى مشروع؟"
+        },
+        "body": {
+          "en": "Every project is different, but our approach stays clear. Here's what working with ORVEN looks like, step by step.",
+          "ar": "تختلف المشروعات، ويظل منهجنا واضحًا. إليك رحلة العمل مع ORVEN خطوة بخطوة."
+        },
+        "label": {
+          "en": "HOW WE WORK",
+          "ar": "كيف نعمل"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "Discover",
+              "ar": "نفهم"
+            },
+            "body": {
+              "en": "We start with a conversation about your business, your audience, the challenges you're facing, and what you want to achieve.",
+              "ar": "نبدأ بمناقشة نشاطك وجمهورك والتحديات التي تواجهها والأهداف التي تسعى إلى تحقيقها."
+            }
+          },
+          {
+            "title": {
+              "en": "Plan",
+              "ar": "نخطط"
+            },
+            "body": {
+              "en": "We define the project's requirements, scope, priorities, and expected timeline so everyone knows what's included.",
+              "ar": "نحدّد متطلبات المشروع ونطاقه وأولوياته والجدول الزمني المتوقع، لتكون تفاصيل العمل واضحة للجميع."
+            }
+          },
+          {
+            "title": {
+              "en": "Design",
+              "ar": "نصمّم"
+            },
+            "body": {
+              "en": "We turn the plan into layouts and interfaces, focusing on clarity and how people will use the product.",
+              "ar": "نحوّل الخطة إلى تصميمات وواجهات واضحة، مع التركيز على تجربة الأشخاص الذين سيستخدمون المنتج."
+            }
+          },
+          {
+            "title": {
+              "en": "Develop & Test",
+              "ar": "نطوّر ونختبر"
+            },
+            "body": {
+              "en": "We build the approved solution, test its functionality and responsiveness, and address issues before launch.",
+              "ar": "ننفّذ الحل المعتمد، ونختبر وظائفه وتوافقه مع الأجهزة المختلفة، ونعالج المشكلات قبل الإطلاق."
+            }
+          },
+          {
+            "title": {
+              "en": "Launch & Support",
+              "ar": "نطلق وندعم"
+            },
+            "body": {
+              "en": "We prepare and launch your project, then provide the maintenance and support agreed upon before delivery.",
+              "ar": "نجهّز مشروعك ونطلقه، ثم نقدّم الصيانة والدعم وفق ما اتُّفق عليه قبل التسليم."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "cta",
+        "title": {
+          "en": "Not sure where to start?",
+          "ar": "لا تعرف من أين تبدأ؟"
+        },
+        "body": {
+          "en": "You don't need to have everything figured out. Tell us about your business and what you're trying to achieve, and we'll help you explore the right solution.",
+          "ar": "لا تحتاج إلى تحديد كل التفاصيل مسبقًا. حدّثنا عن نشاطك وما تسعى إلى تحقيقه، وسنساعدك على استكشاف الحل المناسب."
+        },
+        "label": {
+          "en": "LET'S WORK TOGETHER",
+          "ar": "لنعمل معًا"
+        }
+      }
+    ],
+    "work": [
+      {
+        "kind": "hero",
+        "title": {
+          "en": "See what we've been working on.",
+          "ar": "تعرّف على المشروعات التي نفّذناها."
+        },
+        "body": {
+          "en": "A selection of real projects built by the team behind ORVEN. Different challenges, different solutions — each shaped around the people and businesses it serves.",
+          "ar": "مجموعة من المشروعات الحقيقية التي نفّذها الفريق وراء ORVEN. تحديات مختلفة وحلول مختلفة، صُمّم كل منها لخدمة الأشخاص والأعمال التي تستخدمه."
+        },
+        "label": {
+          "en": "SELECTED WORK",
+          "ar": "أعمال مختارة"
+        }
+      },
+      {
+        "kind": "projects",
+        "title": {
+          "en": "Selected projects.",
+          "ar": "مشروعات مختارة."
+        },
+        "body": "",
+        "label": {
+          "en": "SELECTED PROJECTS",
+          "ar": "المشروعات"
+        },
+        "theme": "light"
+      },
+      {
+        "kind": "cta",
+        "title": {
+          "en": "Now, let's talk about yours.",
+          "ar": "والآن، لنتحدث عن مشروعك."
+        },
+        "body": {
+          "en": "Every project starts with a conversation. Tell us what you're working on, and let's explore how we can help bring it to life.",
+          "ar": "كل مشروع يبدأ بمحادثة. حدّثنا عمّا تعمل عليه، ولنكتشف كيف نساعدك على تحويله إلى واقع."
+        },
+        "label": {
+          "en": "YOUR PROJECT COULD BE NEXT",
+          "ar": "مشروعك يبدأ هنا"
+        }
+      }
+    ],
+    "about": [
+      {
+        "kind": "hero",
+        "title": {
+          "en": "Every decision should earn its place.",
+          "ar": "لكل قرار سبب يستحقه."
+        },
+        "body": {
+          "en": "We're ORVEN, a team designing and developing websites and web applications for businesses. Not every feature deserves a place. We focus on what matters, question what doesn't, and build with intention.",
+          "ar": "نحن ORVEN، فريق يصمّم ويطوّر مواقع وتطبيقات ويب للشركات وأصحاب المشروعات. نختار الخصائص التي تستحق مكانها، ونركّز على ما يهم، ونراجع ما لا يضيف قيمة، ونبني بهدف واضح."
+        },
+        "label": {
+          "en": "ABOUT ORVEN",
+          "ar": "من نحن"
+        }
+      },
+      {
+        "kind": "cards",
+        "title": {
+          "en": "We question first. Then we build.",
+          "ar": "نسأل أولًا، ثم نبني."
+        },
+        "body": {
+          "en": "Good decisions start with asking better questions. Here's what guides the way we approach every project.",
+          "ar": "القرارات المدروسة تبدأ بأسئلة أفضل. هذه المبادئ توجّه طريقة تعاملنا مع كل مشروع."
+        },
+        "label": {
+          "en": "OUR APPROACH",
+          "ar": "منهجنا"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "Understand before building.",
+              "ar": "نفهم قبل أن ننفّذ."
+            },
+            "body": {
+              "en": "We ask questions, challenge assumptions, and look at the real problem before deciding what to build.",
+              "ar": "نطرح الأسئلة ونراجع الافتراضات ونبحث عن المشكلة الحقيقية قبل تحديد ما سنبنيه."
+            }
+          },
+          {
+            "title": {
+              "en": "Keep what matters.",
+              "ar": "نحتفظ بما يضيف قيمة."
+            },
+            "body": {
+              "en": "Every feature and design decision should serve a purpose. If something adds complexity without value, we question whether it belongs.",
+              "ar": "ينبغي أن تخدم كل خاصية وكل خطوة في التصميم هدفًا واضحًا. وإذا أضافت شيئًا من التعقيد دون قيمة، نراجع مدى ضرورتها."
+            }
+          },
+          {
+            "title": {
+              "en": "Think beyond delivery.",
+              "ar": "نفكّر فيما بعد التسليم."
+            },
+            "body": {
+              "en": "We consider how the solution will be used and managed after launch, not just how it looks on the day it's delivered.",
+              "ar": "نفكّر في كيفية استخدام الحل وإدارته بعد الإطلاق، إلى جانب صورته يوم التسليم."
+            }
+          }
+        ]
+      },
+      {
+        "kind": "team",
+        "title": {
+          "en": "Meet the people behind ORVEN.",
+          "ar": "تعرّف على فريق ORVEN."
+        },
+        "body": {
+          "en": "Behind ORVEN are two developers with complementary skills and a shared approach to building digital solutions. We work closely across design, development, and client communication to bring each project together.",
+          "ar": "وراء ORVEN مطوّران بمهارات متكاملة ومنهج مشترك لبناء الحلول الرقمية. نعمل معًا في التصميم والتطوير والتواصل مع العملاء لتتكامل جميع أجزاء المشروع."
+        },
+        "label": {
+          "en": "THE PEOPLE BEHIND ORVEN",
+          "ar": "فريق ORVEN"
+        },
+        "theme": "light",
+        "items": [
+          {
+            "title": {
+              "en": "Mohamed Hamed",
+              "ar": "محمد حامد"
+            },
+            "body": {
+              "en": "Focused on designing intuitive interfaces, building frontend experiences, and understanding what clients need from their digital presence.",
+              "ar": "يركّز على تصميم واجهات سهلة الاستخدام، وتطوير الواجهات الأمامية، وفهم ما يحتاجه العملاء من حضورهم الرقمي."
+            },
+            "role": {
+              "en": "Co-Founder · Frontend & UI/UX",
+              "ar": "شريك مؤسس · الواجهات الأمامية وتصميم تجربة المستخدم"
+            },
+            "social": "hamed"
+          },
+          {
+            "title": {
+              "en": "Mohamed El-Hadidy",
+              "ar": "محمد الحديدي"
+            },
+            "body": {
+              "en": "Focused on backend systems, data, and the technical foundations that support reliable websites and web applications.",
+              "ar": "يركّز على الأنظمة الخلفية والبيانات والأسس التقنية التي تدعم استقرار المواقع وتطبيقات الويب."
+            },
+            "role": {
+              "en": "Co-Founder · Backend Development",
+              "ar": "شريك مؤسس · تطوير الأنظمة الخلفية"
+            },
+            "social": "hadidy"
+          }
+        ]
+      },
+      {
+        "kind": "cta",
+        "title": {
+          "en": "You know us. We'd like to know you.",
+          "ar": "تعرّفت علينا. ويسعدنا أن نتعرّف عليك."
+        },
+        "body": {
+          "en": "Now that you know a little about us, we'd love to hear about you. Tell us what you're working on, what you're trying to achieve, or the challenge you're facing. We'll take it from there, together.",
+          "ar": "بعد أن تعرّفت علينا، يسعدنا أن نسمع منك. حدّثنا عمّا تعمل عليه، أو ما تسعى إلى تحقيقه، أو التحدّي الذي تواجهه، ولنحدّد الخطوة التالية معًا."
+        },
+        "label": {
+          "en": "LET'S CONNECT",
+          "ar": "لنتواصل"
+        }
+      }
+    ],
+    "contact": [
+      {
+        "kind": "hero",
+        "title": {
+          "en": "Let's start with a conversation.",
+          "ar": "لنبدأ بمحادثة."
+        },
+        "body": {
+          "en": "Have a project in mind, a problem you're trying to solve, or just a question? Tell us a little about it. We'll help you figure out the next step.",
+          "ar": "هل لديك فكرة مشروع، أو مشكلة تحاول حلّها، أو سؤال؟ حدّثنا عنها، وسنساعدك على تحديد الخطوة التالية."
+        },
+        "label": {
+          "en": "GET IN TOUCH",
+          "ar": "تواصل معنا"
+        }
+      },
+      {
+        "kind": "channels",
+        "title": {
+          "en": "Choose what works for you.",
+          "ar": "اختر الطريقة الأنسب لك."
+        },
+        "body": {
+          "en": "A quick message, an email, or a conversation — reach out in whatever way feels easiest.",
+          "ar": "رسالة سريعة، أو بريد إلكتروني، أو مكالمة. تواصل معنا بالطريقة التي تناسبك."
+        },
+        "label": {
+          "en": "GET IN TOUCH",
+          "ar": "طرق التواصل"
+        },
+        "items": [
+          {
+            "title": {
+              "en": "WhatsApp",
+              "ar": "واتساب"
+            },
+            "body": {
+              "en": "Have a question or want to discuss an idea? Send us a message.",
+              "ar": "هل لديك سؤال أو فكرة ترغب في مناقشتها؟ أرسل لنا رسالة."
+            },
+            "channel": "whatsapp"
+          },
+          {
+            "title": {
+              "en": "Email",
+              "ar": "البريد الإلكتروني"
+            },
+            "body": {
+              "en": "Prefer to write things down? Tell us a little about your project.",
+              "ar": "هل تفضّل شرح التفاصيل كتابةً؟ راسلنا ببعض المعلومات عن مشروعك."
+            },
+            "channel": "email"
+          },
+          {
+            "title": {
+              "en": "Book a Call",
+              "ar": "احجز مكالمة"
+            },
+            "body": {
+              "en": "Rather talk it through? Reach out to arrange a suitable time for a call.",
+              "ar": "هل تفضّل مناقشة التفاصيل في مكالمة؟ تواصل معنا لتنسيق موعد مناسب."
+            },
+            "channel": "call"
+          }
+        ]
+      },
+      {
+        "kind": "form",
+        "title": {
+          "en": "Tell us a little about your project.",
+          "ar": "حدّثنا قليلًا عن مشروعك."
+        },
+        "body": {
+          "en": "A few details are enough to get started. Don't worry if you haven't figured everything out yet.",
+          "ar": "تكفي بعض التفاصيل لنبدأ. لا تقلق إذا لم تكن قد حدّدت كل شيء بعد."
+        },
+        "label": {
+          "en": "PROJECT INQUIRY",
+          "ar": "استفسار عن مشروع"
+        },
+        "theme": "light"
+      },
+      {
+        "kind": "closing",
+        "title": {
+          "en": "Start small. We'll take it from there.",
+          "ar": "ابدأ بمحادثة بسيطة، ولنحدّد الخطوة التالية معًا."
+        },
+        "body": {
+          "en": "You just need somewhere to start. Tell us what you have in mind, even if it's still an early idea. We'll figure out the next step together.",
+          "ar": "كل ما تحتاج إليه هو نقطة بداية. شاركنا ما تفكّر فيه، حتى لو كانت الفكرة في بدايتها، ولنحدّد الخطوة التالية معًا."
+        },
+        "label": {
+          "en": "ONE LAST THING",
+          "ar": "كلمة أخيرة"
+        }
+      }
+    ]
+  },
+  "review": {
+    "spiky": {
+      "en": "A very good program.",
+      "ar": "برنامج جميل جدا"
+    },
+    "future": {
+      "en": "The client highlighted clear communication, a comfortable working experience, and the value of having a professional website alongside tools for managing project and client information.",
+      "ar": "أشار العميل إلى وضوح التواصل وسهولة التعامل، وإلى فائدة وجود موقع احترافي وأدوات لإدارة معلومات العملاء والمشروعات."
+    }
+  }
+}
