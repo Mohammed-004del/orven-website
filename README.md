@@ -36,6 +36,12 @@ npx wrangler@4.151.2 deploy --config wrangler.jsonc
 
 Wrangler requires the owner's normal Cloudflare authentication. Secrets already exist in the deployed Worker; never put them in `vars`, browser settings, JSON content, a public repository, or this ZIP. Preserve `GAS_SHARED_SECRET`, `GAS_WEB_APP_URL`, and `TURNSTILE_SECRET_KEY`. Google's matching `SHARED_SECRET` lives in Script properties. Do not rerun setup or create another Form for routine edits. Existing Google Form editor and responder access must remain Restricted to the owner; direct public responder access was explicitly removed and live intake retested successfully.
 
+## Motion and the home marquee
+
+- Smooth scrolling uses Lenis 1.3.27, self-hosted at `assets/vendor/lenis.min.js` (MIT licence beside it). `site.js` loads it only on fine pointers and never under reduced motion.
+- Scroll reveals, line-split headings, image masks/parallax, the cursor label and the related-project thumbnail live at the end of `site.js` and in the Motion block of `site.css`. The hero reveal is CSS only. Content is hidden only by JavaScript, only below the fold, and everything is skipped under `prefers-reduced-motion`.
+- The screenshot strip under the home hero is a trial: set `marquee.enabled` to `false` in `source/content.json` and rebuild to remove it. Thumbnails in `assets/thumbs/` are regenerated with `python tools/make_thumbs.py` (needs Pillow; the build itself does not).
+
 ## Later custom domain
 
 Set the public build environment variable `ORVEN_SITE_URL` and the Worker's `SITE_URL` to the same HTTPS origin. `ORVEN_FORM_ENDPOINT` and `ORVEN_TURNSTILE_SITE_KEY` are also supported by the generator. Add the new hostname to the Turnstile widget before switching. Rebuild to regenerate canonical/hreflang/OG URLs, sitemap and robots, deploy, retest delivery, then redirect the old hostname deliberately. No final custom domain has been assumed or purchased.

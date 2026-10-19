@@ -21,10 +21,11 @@ pages=[]
 for file in [*D.glob('en/**/index.html'),*D.glob('ar/**/index.html')]:
  p=Page(file.read_text(encoding='utf-8'));lang=file.relative_to(D).parts[0]
  fonts=['IBMPlexSansArabic-Regular.woff2','IBMPlexSansArabic-Medium.woff2'] if lang=='ar' else ['Inter.woff2','SpaceGrotesk.woff2']
+ if lang=='en' and 'lang="ar" dir="rtl"' in file.read_text(encoding='utf-8'): fonts.append('IBMPlexSansArabic-Regular.woff2')  # verbatim Arabic client feedback
  # Upper bound for all page images at full scroll, plus one uncached load of CSS/JS/fonts.
- total=file.stat().st_size+sum((D/s.lstrip('/')).stat().st_size for s in p.images)+sum((D/f).stat().st_size for f in ['tokens.css','site.css','site.js'])+sum((D/'assets/fonts'/f).stat().st_size for f in fonts)
+ total=file.stat().st_size+sum((D/s.lstrip('/')).stat().st_size for s in p.images)+sum((D/f).stat().st_size for f in ['tokens.css','site.css','site.js','assets/vendor/lenis.min.js'])+sum((D/'assets/fonts'/f).stat().st_size for f in fonts)
  pages.append(dict(path=str(file.relative_to(D)).replace('\\','/'),full_scroll_uncached_bytes=total,passed=total<4_000_000))
-scripts=[dict(file=f,gzip_bytes=len(gzip.compress((D/f).read_bytes())),passed=len(gzip.compress((D/f).read_bytes()))<15_000) for f in ['tokens.css','site.css','site.js']]
+scripts=[dict(file=f,gzip_bytes=len(gzip.compress((D/f).read_bytes())),passed=len(gzip.compress((D/f).read_bytes()))<15_000) for f in ['tokens.css','site.css','site.js','assets/vendor/lenis.min.js']]
 result=dict(colors=colors,pages=pages,scripts=scripts,passed=all(x['passed'] for x in colors+pages+scripts),scope='Static transfer budgets and six text-color token pairs. Does not measure real latency, Core Web Vitals, assistive technology, or full WCAG conformance.')
 (R/'test-results/budgets-contrast.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
 print(json.dumps(dict(passed=result['passed'],page_count=len(pages),max_uncached_page_bytes=max(p['full_scroll_uncached_bytes'] for p in pages),colors=colors)))

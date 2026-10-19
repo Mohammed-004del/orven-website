@@ -51,3 +51,58 @@ if(form){
   finally{clearTimeout(timeout);submit.disabled=false;submit.textContent=copy.submit;turnstileToken='';if(widgetId!==undefined)window.turnstile.reset(widgetId);status.focus()}
  });
 }
+/* Motion — progressive enhancement. Nothing is hidden unless this runs; only content below the
+   fold is hidden; everything is skipped under prefers-reduced-motion. The hero is pure CSS. */
+(()=>{
+ const root=document.documentElement,fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+ const $$=s=>[...document.querySelectorAll(s)];let lenis;
+ // Smooth scrolling: self-hosted Lenis, desktop/fine pointers only. Lenis honours html scroll-padding-top (the fixed header height), so anchors land below the header.
+ if(fine){const s=document.createElement('script');s.src='/assets/vendor/lenis.min.js';s.onload=()=>{try{lenis=new window.Lenis({autoRaf:true,lerp:.1,prevent:n=>!!n.closest?.('dialog,textarea,select,[data-lenis-prevent]')})}catch{}};document.head.append(s)}
+ document.addEventListener('click',e=>{
+  const a=e.target.closest?.('a[href*="#"]');if(!lenis||!a||a.classList.contains('skip'))return;
+  const u=new URL(a.href,location.href),t=u.hash&&document.getElementById(decodeURIComponent(u.hash.slice(1)));
+  if(!t||u.pathname!==location.pathname)return;
+  e.preventDefault();lenis.scrollTo(t);history.pushState(null,'',u.hash);
+ });
+ $$('[data-image]').forEach(b=>b.addEventListener('click',()=>lenis?.stop()));dialog.addEventListener('close',()=>lenis?.start());
+ // Project images: subtle parallax inside the frame.
+ const seen=new Set(),pio=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting?seen.add(x.target):seen.delete(x.target)));
+ $$('.project-image').forEach(a=>{a.classList.add('px');pio.observe(a)});let tick=0;
+ const para=()=>{tick=0;seen.forEach(a=>{const r=a.getBoundingClientRect(),h=innerHeight,p=Math.max(-1,Math.min(1,(r.top+r.height/2-h/2)/(h/2+r.height/2)));a.firstElementChild.style.translate='0 '+(p*r.height*-.035).toFixed(1)+'px'})};
+ addEventListener('scroll',()=>{if(!tick)tick=requestAnimationFrame(para)},{passive:true});
+ // Cursor label over project images and floating thumbnail on the related-project link.
+ if(fine){
+  const make=(c,h)=>{const d=document.createElement('div');d.className='follower '+c;d.setAttribute('aria-hidden','true');d.innerHTML=h;document.body.append(d);return d};
+  const label=make('cursor-label',''),thumb=make('float-thumb','<img alt="">');let cur,x=0,y=0,tx=0,ty=0,raf=0;
+  const place=()=>{const w=cur.offsetWidth,h=cur.offsetHeight,px=tx+w+20>innerWidth?tx-w-16:tx+16,py=ty+h+20>innerHeight?ty-h-16:ty+16;return[px,py]};
+  const loop=()=>{const[px,py]=place();x+=(px-x)*.22;y+=(py-y)*.22;cur.style.transform=`translate(${x}px,${y}px)`;raf=Math.abs(px-x)+Math.abs(py-y)>.4?requestAnimationFrame(loop):0};
+  addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;if(cur&&!raf)raf=requestAnimationFrame(loop)},{passive:true});
+  const bind=(sel,el,set)=>$$(sel).forEach(a=>{a.addEventListener('pointerenter',e=>{set(a);cur=el;tx=e.clientX;ty=e.clientY;[x,y]=place();el.style.transform=`translate(${x}px,${y}px)`;el.classList.add('on')});a.addEventListener('pointerleave',()=>el.classList.remove('on'))});
+  bind('[data-cursor]',label,a=>{label.textContent=a.dataset.cursor});
+  bind('[data-thumb]',thumb,a=>{const i=thumb.firstChild;if(i.getAttribute('src')!==a.dataset.thumb)i.src=a.dataset.thumb});
+ }
+ // Scroll reveals. Line-split headings are restored to their original markup once revealed.
+ const original=new Map();
+ const split=h=>{
+  if([...h.children].some(c=>c.tagName!=='BR'))return false;
+  const html=original.get(h)||h.innerHTML;original.set(h,html);
+  h.innerHTML=html.split(/<br\s*\/?>/i).map(p=>p.trim().split(/\s+/).map(w=>'<span>'+w+'</span>').join(' ')).join('<br>');
+  const lines=[];let top;
+  for(const w of h.querySelectorAll('span')){if(top===undefined||Math.abs(w.offsetTop-top)>4){lines.push([]);top=w.offsetTop}lines.at(-1).push(w.innerHTML)}
+  h.innerHTML=lines.map((l,i)=>`<span class="ln"><span style="--i:${i}">${l.join(' ')}</span></span>`).join(' ');return true;
+ };
+ const done=el=>{el.classList.remove('rv','rv-line','rv-split','in');el.style.removeProperty('--d');if(original.has(el)){el.innerHTML=original.get(el);original.delete(el)}};
+ const io=new IntersectionObserver(es=>{let n=0;for(const x of es){if(!x.isIntersecting)continue;const el=x.target,d=Math.min(n++,6)*80;io.unobserve(el);el.style.setProperty('--d',d+'ms');el.classList.add('in');setTimeout(()=>done(el),d+1700)}},{rootMargin:'0px 0px -8% 0px'});
+ const init=()=>{try{
+  root.classList.add('js-motion');
+  const below=el=>el.getBoundingClientRect().top>innerHeight*.92,mark=(sel,...cls)=>$$(sel).forEach(el=>{if(!below(el)||el.classList.contains('rv')&&!cls.length)return;if(cls[0]==='rv-split'&&!split(el))cls=['rv'];el.classList.add('rv',...cls);io.observe(el)});
+  mark('.section-head h2,.case-prose>h2,.case-gallery h2','rv-split');
+  mark('.cards-grid article,.process-grid article,.team-grid article,.capabilities li,.faq details,.reviews-grid article','rv-line');
+  mark('.project-image');
+  mark('.section:not(.hero) .section-head .eyebrow,.section:not(.hero) .section-head .intro,.grid article,.project>:not(.project-image),.work-bottom,.review-note,.section-link,.detail>.wrap>.text-link,.cta .actions,.case-prose>:not(h2),.case-text>.wrap>.eyebrow,.case-features>.wrap>.eyebrow,.case-gallery>.wrap>.eyebrow,.gallery-group>h3,.gallery-group>p,.gallery-figure,.case-gallery>.wrap>p');
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>original.forEach((_,h)=>{if(!h.classList.contains('in'))split(h)}),200)});
+  addEventListener('beforeprint',()=>$$('.rv').forEach(done));para();
+ }catch{root.classList.remove('js-motion')}};
+ Promise.race([document.fonts?.ready,new Promise(r=>setTimeout(r,1200))]).then(init,init);
+})();

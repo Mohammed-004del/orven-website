@@ -155,6 +155,14 @@
     "showLess": {
       "en": "Show less",
       "ar": "عرض أقل"
+    },
+    "cursorView": {
+      "en": "View case",
+      "ar": "اعرض المشروع"
+    },
+    "marquee": {
+      "en": "Screenshots from our recent projects",
+      "ar": "لقطات من مشروعاتنا الأخيرة"
     }
   },
   "form": {
@@ -1157,5 +1165,43 @@
         "It was a truly great experience, and I appreciate the effort, the attention to detail, and the quality of execution. I recommend working with the engineer to anyone looking for a professional website or a complete technical solution that suits their kind of work and helps them grow it."
       ]
     }
+  },
+  "marquee": {
+    "_note": "Trial: slow strip of real project screenshots under the home hero. Set enabled to false to remove it on the next build. Spiky thumbnails stay Arabic; {lang} picks the Future Interiors thumbnail in the page language. Regenerate thumbnails with tools/make_thumbs.py.",
+    "enabled": true,
+    "items": [
+      {
+        "project": "spiky",
+        "thumb": "spiky-public-cover-ar.webp"
+      },
+      {
+        "project": "future-interiors",
+        "thumb": "future-public-{lang}-01.webp"
+      },
+      {
+        "project": "spiky",
+        "thumb": "spiky-public-coach-ar.webp"
+      },
+      {
+        "project": "future-interiors",
+        "thumb": "future-public-{lang}-02.webp"
+      },
+      {
+        "project": "spiky",
+        "thumb": "spiky-public-faq-ar.webp"
+      },
+      {
+        "project": "future-interiors",
+        "thumb": "future-public-{lang}-03.webp"
+      },
+      {
+        "project": "spiky",
+        "thumb": "spiky-public-contact-ar.webp"
+      },
+      {
+        "project": "future-interiors",
+        "thumb": "future-public-{lang}-04.webp"
+      }
+    ]
   }
 }
