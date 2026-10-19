@@ -82,6 +82,8 @@ if(form){
   bind('[data-cursor]',label,a=>{label.textContent=a.dataset.cursor});
   bind('[data-thumb]',thumb,a=>{const i=thumb.firstChild;if(i.getAttribute('src')!==a.dataset.thumb)i.src=a.dataset.thumb});
  }
+ // Lazy images that are still loading fade in instead of popping.
+ $$('img[loading=lazy]').forEach(i=>{if(i.complete)return;i.classList.add('img-fade');const on=()=>i.classList.add('loaded');i.addEventListener('load',on,{once:true});i.addEventListener('error',on,{once:true})});
  // Scroll reveals. Line-split headings are restored to their original markup once revealed.
  const original=new Map();
  const split=h=>{
