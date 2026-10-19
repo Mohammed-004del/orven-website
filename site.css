@@ -120,3 +120,40 @@ html[dir=rtl] .marquee-track{animation-name:marquee-rtl}
 .site-header.menu-open nav a:nth-child(2){animation-delay:50ms}.site-header.menu-open nav a:nth-child(3){animation-delay:100ms}.site-header.menu-open nav a:nth-child(4){animation-delay:150ms}
 .menu-toggle span{transition:transform .28s var(--ease)}
 }
+/* Lightbox: eased open/close, image cross-fade, previous/next bar */
+.lightbox .lb-bar{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:16px}
+.lightbox .lb-bar p{margin:0;flex:0 1 auto}
+.lb-count{font-size:12px;color:var(--muted-dark);min-width:44px;text-align:center}
+.lb-prev,.lb-next{flex:none;width:44px;height:44px;border:1px solid var(--line-dark);border-radius:var(--radius);background:transparent;color:inherit;font-size:18px;line-height:1;transition:border-color var(--motion-fast)}
+.lb-prev:hover,.lb-next:hover{border-color:var(--bronze)}
+html[dir=rtl] .lb-bar button span{display:inline-block;transform:scaleX(-1)}
+.lightbox.single .lb-prev,.lightbox.single .lb-next,.lightbox.single .lb-count{display:none}
+@media(prefers-reduced-motion:no-preference){
+.lightbox{opacity:0;scale:.97;transition:opacity .3s var(--ease),scale .35s var(--ease),overlay .35s allow-discrete,display .35s allow-discrete}
+.lightbox[open]{opacity:1;scale:1}
+@starting-style{.lightbox[open]{opacity:0;scale:.97}}
+.lightbox::backdrop{background:#0000;transition:background .3s,overlay .35s allow-discrete,display .35s allow-discrete}
+.lightbox[open]::backdrop{background:#000b}
+@starting-style{.lightbox[open]::backdrop{background:#0000}}
+.lb-swap{animation:lb-swap .4s var(--ease)}
+@keyframes lb-swap{from{opacity:0;scale:.985}}
+}
+/* Process steps: bronze progress line over the step dividers (vertical on phones) */
+.process-grid{position:relative}
+.process-grid::before{content:'';position:absolute;inset-inline:0;top:0;height:1px;background:var(--bronze);transform:scaleX(var(--p,0));transform-origin:left;z-index:1;pointer-events:none}
+html[dir=rtl] .process-grid::before{transform-origin:right}
+@media(max-width:760px){.process-grid::before{inset-inline:auto;inset-inline-start:0;top:0;bottom:0;width:1px;height:auto;transform:scaleY(var(--p,0));transform-origin:top}}
+/* Case studies: reading progress */
+.read-progress{position:fixed;inset:0 0 auto;height:2px;z-index:40;background:var(--bronze);transform:scaleX(0);transform-origin:left;pointer-events:none}
+html[dir=rtl] .read-progress{transform-origin:right}
+/* Hero: soft bronze light (follows the pointer on desktop, eased by CSS) */
+@property --gx{syntax:'<percentage>';inherits:false;initial-value:72%}
+@property --gy{syntax:'<percentage>';inherits:false;initial-value:28%}
+.hero{position:relative;isolation:isolate;transition:--gx 1.4s var(--ease),--gy 1.4s var(--ease)}
+.hero::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle 560px at var(--gx) var(--gy),rgb(185 161 137/.09),transparent 70%)}
+html[dir=rtl] .hero{--gx:28%}
+@media(max-width:760px){.hero::before{background:radial-gradient(circle 300px at 80% 22%,rgb(185 161 137/.08),transparent 70%)}html[dir=rtl] .hero::before{background:radial-gradient(circle 300px at 20% 22%,rgb(185 161 137/.08),transparent 70%)}}
+/* Contact form: drawn tick beside the confirmed-success message */
+#form-status.ok{display:flex;align-items:center;gap:12px;color:#2f5f43;font-weight:500}
+#form-status.ok::before{content:'';flex:none;width:7px;height:13px;margin:0 4px 4px;border:solid currentColor;border-width:0 2px 2px 0;rotate:45deg}
+@media(prefers-reduced-motion:no-preference){#form-status.ok::before{animation:tick .5s var(--ease) both}@keyframes tick{from{clip-path:inset(0 0 100% 0)}}}

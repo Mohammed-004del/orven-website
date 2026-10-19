@@ -11,8 +11,15 @@ window.addEventListener('resize',()=>{if(window.innerWidth>760)closeMenu()});
 window.addEventListener('scroll',()=>{const y=window.scrollY;if(Math.abs(y-previousScroll)>5){header.classList.toggle('is-hidden',y>140&&y>previousScroll&&!header.classList.contains('menu-open'));previousScroll=y}},{passive:true});
 const toast=document.querySelector('.toast');let toastTimer;
 document.querySelectorAll('[data-unavailable]').forEach(b=>b.addEventListener('click',()=>{toast.textContent=b.dataset.unavailable;toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{toast.hidden=true},8500)}));
-const dialog=document.querySelector('.lightbox');let lastImageButton;
-document.querySelectorAll('[data-image]').forEach(b=>b.addEventListener('click',()=>{lastImageButton=b;dialog.querySelector('img').src=b.dataset.image;dialog.querySelector('img').alt=b.dataset.caption;dialog.querySelector('p').textContent=b.dataset.caption;dialog.showModal()}));
+const dialog=document.querySelector('.lightbox'),shots=[...document.querySelectorAll('[data-image]')],lbImg=dialog.querySelector('img'),lbCap=dialog.querySelector('p'),lbCount=dialog.querySelector('.lb-count');let lastImageButton,current=0;
+function showImage(i){current=(i+shots.length)%shots.length;const b=shots[current];lastImageButton=b;lbImg.src=b.dataset.image;lbImg.alt=b.dataset.caption;lbCap.textContent=b.dataset.caption;if(lbCount)lbCount.textContent=shots.length>1?current+1+' / '+shots.length:'';lbImg.classList.remove('lb-swap');void lbImg.offsetWidth;lbImg.classList.add('lb-swap')}
+const step=fwd=>showImage(current+(fwd?1:-1)),rtl=document.documentElement.dir==='rtl';
+shots.forEach((b,i)=>b.addEventListener('click',()=>{showImage(i);dialog.classList.toggle('single',shots.length<2);dialog.showModal()}));
+dialog.querySelector('.lb-prev')?.addEventListener('click',()=>step(false));dialog.querySelector('.lb-next')?.addEventListener('click',()=>step(true));
+dialog.addEventListener('keydown',e=>{if((e.key==='ArrowLeft'||e.key==='ArrowRight')&&shots.length>1){e.preventDefault();step((e.key==='ArrowRight')!==rtl)}});
+// Touch: swipe sideways to change image, swipe down (at the top) to close.
+let touchX,touchY;dialog.addEventListener('touchstart',e=>{touchX=e.touches[0].clientX;touchY=e.touches[0].clientY},{passive:true});
+dialog.addEventListener('touchend',e=>{if(touchX===undefined)return;const t=e.changedTouches[0],dx=t.clientX-touchX,dy=t.clientY-touchY;touchX=undefined;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.3&&shots.length>1)step((dx<0)!==rtl);else if(dy>90&&dy>Math.abs(dx)*1.3&&dialog.scrollTop<=0)dialog.close()},{passive:true});
 dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
 dialog.addEventListener('close',()=>lastImageButton?.focus());
@@ -34,7 +41,7 @@ if(form){
  function validContact(s){s=normalizeDigits(s.trim());if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s))return true;return /^[+\d\s()-]+$/.test(s)&&/^\+?\d{8,15}$/.test(s.replace(/[\s()-]/g,''))}
  ids.forEach(id=>document.getElementById(id).addEventListener('input',()=>error(id,'')));
  form.addEventListener('submit',async e=>{
-  e.preventDefault();status.textContent='';let firstInvalid;
+  e.preventDefault();status.textContent='';status.classList.remove('ok');let firstInvalid;
   ids.forEach(id=>{const v=document.getElementById(id).value.trim();const msg=!v?copy.required:id==='contact'&&!validContact(v)?copy.invalid:'';error(id,msg);if(msg&&!firstInvalid)firstInvalid=id});
   if(firstInvalid){document.getElementById(firstInvalid).focus();return}
   if(!settings.formEndpoint){status.textContent=copy.unconfigured;status.focus();return}
@@ -46,7 +53,7 @@ if(form){
    const response=await fetch(settings.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:controller.signal,credentials:'omit',referrerPolicy:'no-referrer'});
    const result=await response.json();
    if(!response.ok||result.received!==true||result.requestId!==requestId)throw new Error('Unconfirmed delivery');
-   status.textContent=copy.success;form.reset();requestId=crypto.randomUUID();startedAt=Date.now();
+   status.textContent=copy.success;status.classList.add('ok');form.reset();requestId=crypto.randomUUID();startedAt=Date.now();
   }catch{status.textContent=copy.error}
   finally{clearTimeout(timeout);submit.disabled=false;submit.textContent=copy.submit;turnstileToken='';if(widgetId!==undefined)window.turnstile.reset(widgetId);status.focus()}
  });
@@ -70,7 +77,16 @@ if(form){
  const seen=new Set(),pio=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting?seen.add(x.target):seen.delete(x.target)));
  $$('.project-image').forEach(a=>{a.classList.add('px');pio.observe(a)});let tick=0;
  const para=()=>{tick=0;seen.forEach(a=>{const r=a.getBoundingClientRect(),h=innerHeight,p=Math.max(-1,Math.min(1,(r.top+r.height/2-h/2)/(h/2+r.height/2)));a.firstElementChild.style.translate='0 '+(p*r.height*-.035).toFixed(1)+'px'})};
- addEventListener('scroll',()=>{if(!tick)tick=requestAnimationFrame(para)},{passive:true});
+ // Process steps: a bronze line follows scroll progress. Case studies: reading progress bar.
+ const steps=$$('.process-grid');let bar;
+ if(document.querySelector('.case-hero')){bar=document.createElement('div');bar.className='read-progress';bar.setAttribute('aria-hidden','true');document.body.append(bar)}
+ const frame=()=>{para();const h=innerHeight;
+  steps.forEach(g=>{const r=g.getBoundingClientRect();g.style.setProperty('--p',Math.max(0,Math.min(1,(h*.85-r.top)/Math.max(r.height,h*.45))).toFixed(3))});
+  if(bar)bar.style.transform=`scaleX(${Math.min(1,scrollY/Math.max(1,document.documentElement.scrollHeight-h)).toFixed(4)})`};
+ addEventListener('scroll',()=>{if(!tick)tick=requestAnimationFrame(frame)},{passive:true});
+ // Hero: soft bronze light follows the pointer (fine pointers only; CSS eases the movement).
+ const hero=document.querySelector('.hero');
+ if(fine&&hero)hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--gx',((e.clientX-r.left)/r.width*100).toFixed(1)+'%');hero.style.setProperty('--gy',((e.clientY-r.top)/r.height*100).toFixed(1)+'%')},{passive:true});
  // Cursor label over project images and floating thumbnail on the related-project link.
  if(fine){
   const make=(c,h)=>{const d=document.createElement('div');d.className='follower '+c;d.setAttribute('aria-hidden','true');d.innerHTML=h;document.body.append(d);return d};
@@ -104,7 +120,7 @@ if(form){
   mark('.project-image');
   mark('.section:not(.hero) .section-head .eyebrow,.section:not(.hero) .section-head .intro,.grid article,.project>:not(.project-image),.work-bottom,.review-note,.section-link,.detail>.wrap>.text-link,.cta .actions,.case-prose>:not(h2),.case-text>.wrap>.eyebrow,.case-features>.wrap>.eyebrow,.case-gallery>.wrap>.eyebrow,.gallery-group>h3,.gallery-group>p,.gallery-figure,.case-gallery>.wrap>p');
   let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>original.forEach((_,h)=>{if(!h.classList.contains('in'))split(h)}),200)});
-  addEventListener('beforeprint',()=>$$('.rv').forEach(done));para();
+  addEventListener('beforeprint',()=>$$('.rv').forEach(done));frame();
  }catch{root.classList.remove('js-motion')}};
  Promise.race([document.fonts?.ready,new Promise(r=>setTimeout(r,1200))]).then(init,init);
 })();
