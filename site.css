@@ -80,7 +80,7 @@ html[dir=rtl] .text-link:hover::after,html[dir=rtl] .text-link:focus-visible::af
 .marquee{overflow:hidden;padding-block:8px 72px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .marquee-track{display:flex;width:max-content;animation:marquee 90s linear infinite}
 html[dir=rtl] .marquee-track{animation-name:marquee-rtl}
-.marquee:hover .marquee-track{animation-play-state:paused}
+@media(hover:hover) and (pointer:fine){.marquee:hover .marquee-track{animation-play-state:paused}}
 .marquee-set{display:flex;gap:20px;margin:0;padding:0 10px;list-style:none}
 .marquee-set img{width:320px;height:180px;object-fit:cover;object-position:top;border-radius:6px;border:1px solid var(--line-dark);background:var(--carbon)}
 @keyframes marquee{to{translate:-50% 0}}@keyframes marquee-rtl{to{translate:50% 0}}
