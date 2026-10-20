@@ -36,16 +36,13 @@ html{--dir:1}html[dir=rtl]{--dir:-1}
 html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:clip}
 @keyframes rise{from{opacity:0;translate:0 18px}}
 @keyframes line-in{from{translate:0 .32em}}@keyframes uncover{from{transform:scaleY(1)}}
-/* Hero lines: the text is painted at first paint (so it counts for LCP); a page-coloured cover
-   uncovers each line while the text rises slightly. The cover rests at scaleY(0), so without
-   animation (reduced motion) it is invisible. */
+/* Keep the first screen readable immediately. A short translation preserves the entrance
+   motion without covering text or making people wait for delayed opacity animations. */
+@keyframes settle{from{translate:0 6px}}
 .hl{display:inline-block;position:relative;vertical-align:top}
-.hl>span{display:inline-block;animation:line-in 1s var(--ease) both;animation-delay:calc(120ms + var(--i,0)*110ms)}
-.hl::after{content:'';position:absolute;inset:-.08em -.06em;background:var(--obsidian);transform:scaleY(0);transform-origin:top;pointer-events:none;animation:uncover .95s var(--ease) both;animation-delay:calc(120ms + var(--i,0)*110ms)}
-.hero .eyebrow,.case-hero>.wrap>.eyebrow{animation:rise .8s var(--ease) both}
-.hero .intro,.case-intro{animation:rise .9s var(--ease) .38s both}
-.hero .actions,.case-hero .case-meta{animation:rise .9s var(--ease) .5s both}
-.hero-foot,.case-hero .actions{animation:rise .9s var(--ease) .62s both}
+.hl>span{display:inline-block;animation:settle .45s var(--ease) both}
+.hero .eyebrow,.case-hero>.wrap>.eyebrow,.hero .intro,.case-intro,
+.hero .actions,.case-hero .case-meta,.hero-foot,.case-hero .actions{animation:settle .45s var(--ease) both}
 /* scroll reveals */
 .js-motion .rv{opacity:0;translate:0 22px;transition:opacity .8s var(--ease),translate .9s var(--ease);transition-delay:var(--d,0ms)}
 .js-motion .rv.in{opacity:1;translate:none}
