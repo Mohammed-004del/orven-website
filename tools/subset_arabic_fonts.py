@@ -22,5 +22,12 @@ for name in ['IBMPlexSansArabic-Regular', 'IBMPlexSansArabic-Medium']:
     sub=subset.Subsetter(options)
     sub.populate(unicodes=characters)
     sub.subset(font)
-    subset.save_font(font,str(F/f'{name}.woff2'),options)
-    print(name,(F/f'{name}.woff2').stat().st_size)
+    # The original OFL reserves "Plex". Give the modified font a distinct primary name.
+    weight=name.rsplit('-',1)[1]
+    output=f'ORVENArabic-{weight}'
+    names={1:'ORVEN Arabic',2:weight,3:f'ORVEN Arabic Subset {weight}',4:f'ORVEN Arabic {weight}',6:output,16:'ORVEN Arabic',17:weight}
+    for record in font['name'].names:
+        if record.nameID in names:
+            record.string=names[record.nameID].encode(record.getEncoding())
+    subset.save_font(font,str(F/f'{output}.woff2'),options)
+    print(output,(F/f'{output}.woff2').stat().st_size)

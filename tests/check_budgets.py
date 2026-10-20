@@ -20,8 +20,8 @@ colors=[dict(name=n,ratio=contrast(a,b),passed=contrast(a,b)>=4.5) for n,a,b in 
 pages=[]
 for file in [*D.glob('en/**/index.html'),*D.glob('ar/**/index.html')]:
  p=Page(file.read_text(encoding='utf-8'));lang=file.relative_to(D).parts[0]
- fonts=['IBMPlexSansArabic-Regular.woff2','IBMPlexSansArabic-Medium.woff2'] if lang=='ar' else ['Inter.woff2','SpaceGrotesk.woff2']
- if lang=='en' and 'lang="ar" dir="rtl"' in file.read_text(encoding='utf-8'): fonts.append('IBMPlexSansArabic-Regular.woff2')  # verbatim Arabic client feedback
+ fonts=['ORVENArabic-Regular.woff2','ORVENArabic-Medium.woff2'] if lang=='ar' else ['Inter.woff2','SpaceGrotesk.woff2']
+ if lang=='en' and 'lang="ar" dir="rtl"' in file.read_text(encoding='utf-8'): fonts.append('ORVENArabic-Regular.woff2')  # verbatim Arabic client feedback
  # Upper bound for all page images at full scroll, plus one uncached load of CSS/JS/fonts.
  total=file.stat().st_size+sum((D/s.lstrip('/')).stat().st_size for s in p.images)+sum((D/f).stat().st_size for f in ['tokens.css','site.css','site.js','assets/vendor/lenis.min.js'])+sum((D/'assets/fonts'/f).stat().st_size for f in fonts)
  pages.append(dict(path=str(file.relative_to(D)).replace('\\','/'),full_scroll_uncached_bytes=total,passed=total<4_000_000))

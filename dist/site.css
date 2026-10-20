@@ -11,7 +11,7 @@ html{scrollbar-width:none}body{overflow-wrap:break-word}select{font:inherit}a,bu
 .reviews-grid blockquote p+p{margin-top:16px}
 .reviews-grid .review-quote{font-size:26px;line-height:1.65;letter-spacing:0}
 .reviews-grid .review-summary{font-family:var(--body);font-size:18px;line-height:1.85;letter-spacing:0;margin:28px 0 0;max-width:none}
-.reviews [lang=ar]{font-family:'IBM Plex Sans Arabic',Arial,sans-serif;font-weight:400}
+.reviews [lang=ar]{font-family:'ORVEN Arabic',Arial,sans-serif;font-weight:400}
 .review-translation-label{margin-top:28px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-light)}
 .review-translation{margin-top:10px;font-size:15px;line-height:1.7;color:var(--muted-light);max-width:52ch}
 .review-translation p+p{margin-top:12px}
