@@ -159,3 +159,57 @@ html[dir=rtl] .hero{--gx:28%}
 .team-grid h3,html[lang=ar] .team-grid h3{font-size:34px}
 @media(max-width:1100px){.team-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.team-grid{grid-template-columns:1fr;gap:32px}.team-grid h3,html[lang=ar] .team-grid h3{font-size:32px}}
+/* ── Hover: animated bronze gradients ──────────────────────────────────
+   Text links in the header/footer/FAQ wipe from their normal colour into a bronze
+   gradient; buttons get a sheen or a soft gradient fill. Hover styles apply to
+   mouse/trackpad only (no sticky hover after a tap); keyboard focus gets the same look. */
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+.site-header nav a,.lang,.footer-main nav a,.footer-bottom a,.founder-links a,.faq summary{
+ --c:var(--porcelain);--g1:#EFE2D1;--g2:var(--bronze);--g3:#F6ECDF;--g4:#A88D72;
+ background-image:linear-gradient(90deg,var(--g1),var(--g2) 16%,var(--g3) 30%,var(--g4) 44%,var(--g2) 50%,var(--c) 50%);
+ background-size:200% 100%;background-position:100% 0;background-repeat:no-repeat;
+ -webkit-background-clip:text;background-clip:text;color:transparent;
+ transition:background-position .55s var(--ease)}
+html[dir=rtl] :is(.site-header nav a,.lang,.footer-main nav a,.footer-bottom a,.founder-links a,.faq summary){
+ background-image:linear-gradient(270deg,var(--g1),var(--g2) 16%,var(--g3) 30%,var(--g4) 44%,var(--g2) 50%,var(--c) 50%);background-position:0 0}
+.founder-links a,.footer-bottom a{--c:var(--muted-dark)}
+.faq summary{--c:var(--ink);--g1:#5E4632;--g2:#715842;--g3:#4F3A29;--g4:#6E5640}
+.site-header nav a[aria-current]{background-position:0 0}
+html[dir=rtl] .site-header nav a[aria-current]{background-position:100% 0}
+.site-header nav a:focus-visible,.lang:focus-visible,.footer-main nav a:focus-visible,.footer-bottom a:focus-visible,.founder-links a:focus-visible,.faq summary:focus-visible{background-position:0 0}
+html[dir=rtl] :is(.site-header nav a,.lang,.footer-main nav a,.footer-bottom a,.founder-links a,.faq summary):focus-visible{background-position:100% 0}
+@media(hover:hover) and (pointer:fine){
+ :is(.site-header nav a,.lang,.footer-main nav a,.footer-bottom a,.founder-links a,.faq summary):hover{background-position:0 0}
+ html[dir=rtl] :is(.site-header nav a,.lang,.footer-main nav a,.footer-bottom a,.founder-links a,.faq summary):hover{background-position:100% 0}
+}
+}
+/* Header links: gradient underline grows from the reading start (replaces the static border) */
+.site-header nav a{position:relative;border-bottom-color:transparent!important}
+.site-header nav a::after{content:'';position:absolute;inset-inline:0;bottom:6px;height:1px;background:linear-gradient(90deg,var(--bronze),#E6D6C3,var(--bronze));transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease)}
+html[dir=rtl] .site-header nav a::after{transform-origin:right}
+.site-header nav a[aria-current]::after,.site-header nav a:focus-visible::after{transform:none}
+@media(hover:hover) and (pointer:fine){.site-header nav a:hover::after{transform:none}}
+@media(max-width:760px){.site-header nav a::after{bottom:8px;inset-inline-end:auto;width:48px}}
+/* Primary buttons: a light sheen sweeps across the bronze */
+.btn:not(.secondary){background-image:linear-gradient(110deg,transparent 35%,rgb(255 245 232/.55) 50%,transparent 65%);background-size:250% 100%;background-position:120% 0;background-repeat:no-repeat;transition:background-color var(--motion-fast),background-position .8s var(--ease),transform var(--motion-fast),box-shadow .3s var(--ease)}
+html[dir=rtl] .btn:not(.secondary){background-image:linear-gradient(250deg,transparent 35%,rgb(255 245 232/.55) 50%,transparent 65%);background-position:-20% 0}
+/* Secondary buttons and the lightbox controls: a soft bronze gradient fills from the start */
+.btn.secondary,.lb-prev,.lb-next,.menu-toggle{position:relative;isolation:isolate;overflow:hidden}
+.btn.secondary::before,.lb-prev::before,.lb-next::before,.menu-toggle::before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgb(185 161 137/.22),rgb(230 214 195/.10));transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+html[dir=rtl] :is(.btn.secondary,.lb-prev,.lb-next,.menu-toggle)::before{transform-origin:right;background:linear-gradient(270deg,rgb(185 161 137/.22),rgb(230 214 195/.10))}
+.light .btn.secondary::before{background:linear-gradient(90deg,rgb(113 88 66/.14),rgb(185 161 137/.06))}
+:is(.btn.secondary,.lb-prev,.lb-next,.menu-toggle):focus-visible::before{transform:none}
+.menu-toggle span{transition:transform .28s var(--ease),background-color .3s}
+.lightbox .close{transition:rotate .4s var(--ease),color .3s}
+.gallery-figure .image-open img{transition:scale .6s var(--ease)}
+@media(hover:hover) and (pointer:fine){
+ .btn:not(.secondary):hover{background-position:-20% 0;box-shadow:0 10px 28px -12px rgb(185 161 137/.65)}
+ html[dir=rtl] .btn:not(.secondary):hover{background-position:120% 0}
+ :is(.btn.secondary,.lb-prev,.lb-next,.menu-toggle):hover::before{transform:none}
+ .menu-toggle:hover{border-color:var(--bronze)}
+ .menu-toggle:hover span{background-color:var(--bronze)}
+ .lightbox .close:hover{rotate:90deg;color:var(--bronze)}
+ .gallery-figure .image-open:hover img{scale:1.015}
+ .brand img,.footer-logo{transition:opacity .3s,filter .4s}
+ .brand:hover img,a:hover>.footer-logo{filter:brightness(1.15) saturate(1.1)}
+}
