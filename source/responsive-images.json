@@ -1,0 +1,208 @@
+{
+  "future-public-ar-01.jpg": [
+    {
+      "src": "responsive/future-public-ar-01-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-ar-01-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-ar-01-1440.webp",
+      "width": 1440
+    }
+  ],
+  "future-public-ar-02.jpg": [
+    {
+      "src": "responsive/future-public-ar-02-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-ar-02-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-ar-02-1440.webp",
+      "width": 1440
+    }
+  ],
+  "future-public-ar-03.jpg": [
+    {
+      "src": "responsive/future-public-ar-03-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-ar-03-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-ar-03-1440.webp",
+      "width": 1440
+    }
+  ],
+  "future-public-ar-04.jpg": [
+    {
+      "src": "responsive/future-public-ar-04-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-ar-04-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-ar-04-1440.webp",
+      "width": 1440
+    }
+  ],
+  "future-public-en-01.jpg": [
+    {
+      "src": "responsive/future-public-en-01-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-en-01-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-en-01-1440.webp",
+      "width": 1440
+    }
+  ],
+  "future-public-en-02.jpg": [
+    {
+      "src": "responsive/future-public-en-02-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-en-02-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-en-02-1440.webp",
+      "width": 1440
+    }
+  ],
+  "future-public-en-03.jpg": [
+    {
+      "src": "responsive/future-public-en-03-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-en-03-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-en-03-1440.webp",
+      "width": 1440
+    }
+  ],
+  "future-public-en-04.jpg": [
+    {
+      "src": "responsive/future-public-en-04-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/future-public-en-04-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/future-public-en-04-1440.webp",
+      "width": 1440
+    }
+  ],
+  "spiky-client-exercise-ar.png": [
+    {
+      "src": "responsive/spiky-client-exercise-ar-431.webp",
+      "width": 431
+    }
+  ],
+  "spiky-client-recipes-ar.png": [
+    {
+      "src": "responsive/spiky-client-recipes-ar-420.webp",
+      "width": 420
+    }
+  ],
+  "spiky-dashboard-redacted-ar.png": [
+    {
+      "src": "responsive/spiky-dashboard-redacted-ar-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/spiky-dashboard-redacted-ar-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/spiky-dashboard-redacted-ar-1440.webp",
+      "width": 1440
+    }
+  ],
+  "spiky-public-coach-ar.png": [
+    {
+      "src": "responsive/spiky-public-coach-ar-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/spiky-public-coach-ar-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/spiky-public-coach-ar-1440.webp",
+      "width": 1440
+    }
+  ],
+  "spiky-public-contact-ar.png": [
+    {
+      "src": "responsive/spiky-public-contact-ar-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/spiky-public-contact-ar-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/spiky-public-contact-ar-1440.webp",
+      "width": 1440
+    }
+  ],
+  "spiky-public-cover-ar.png": [
+    {
+      "src": "responsive/spiky-public-cover-ar-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/spiky-public-cover-ar-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/spiky-public-cover-ar-1440.webp",
+      "width": 1440
+    }
+  ],
+  "spiky-public-faq-ar.png": [
+    {
+      "src": "responsive/spiky-public-faq-ar-480.webp",
+      "width": 480
+    },
+    {
+      "src": "responsive/spiky-public-faq-ar-960.webp",
+      "width": 960
+    },
+    {
+      "src": "responsive/spiky-public-faq-ar-1440.webp",
+      "width": 1440
+    }
+  ],
+  "spiky-public-mobile-hero-ar.png": [
+    {
+      "src": "responsive/spiky-public-mobile-hero-ar-371.webp",
+      "width": 371
+    }
+  ],
+  "spiky-public-mobile-package-ar.png": [
+    {
+      "src": "responsive/spiky-public-mobile-package-ar-376.webp",
+      "width": 376
+    }
+  ]
+}

@@ -6,6 +6,10 @@ Read `DELIVERY-REPORT-AR.md` for verified results, limitations, ownership, and r
 
 ## Edit and preview
 
+Performance maintenance: `tools/responsive_images.py` (Pillow) regenerates uncropped WebP display variants after screenshot changes; the original files remain the lightbox sources. `tools/subset_arabic_fonts.py` (fonttools + brotli) regenerates Arabic webfonts from the retained TTF originals, preserving Arabic shaping, the basic Arabic block, and authored characters. Commit generated assets and their manifest. The standard-library build embeds the authored CSS into each page to avoid blocking CSS requests, and preloads both page-language fonts. Keep editing the original CSS files, not the generated inline styles.
+
+Optional browser regression checks: install Playwright and run `node tests/performance-browser.cjs` against the preview server on port 8773, or set `TEST_ORIGIN`. It checks both languages and widths, original-image zoom, navigation and empty-form validation; it does not send an inquiry.
+
 - `source/content.json`: navigation, all 26 core sections, buttons, FAQs, form messages, and English/Arabic metadata copy.
 - `source/cases.json`: the two seven-section case studies.
 - `source/privacy.json`: bilingual privacy policy.

@@ -9,6 +9,7 @@ R=Path(__file__).resolve().parent.parent; S=R/'source'; D=R/'dist'
 C=json.loads((S/'content.json').read_text(encoding='utf-8')); K=json.loads((S/'site-config.json').read_text(encoding='utf-8'))
 CASES=json.loads((S/'cases.json').read_text(encoding='utf-8')); PRIV=json.loads((S/'privacy.json').read_text(encoding='utf-8'))
 DIMENSIONS=json.loads((S/'asset-dimensions.json').read_text(encoding='utf-8'))
+RESPONSIVE=json.loads((S/'responsive-images.json').read_text(encoding='utf-8'))
 for variable,key in [('ORVEN_SITE_URL','site_url'),('ORVEN_FORM_ENDPOINT','form_endpoint'),('ORVEN_TURNSTILE_SITE_KEY','turnstile_site_key')]:
  if os.environ.get(variable):K[key]=os.environ[variable]
 PROD='--production' in sys.argv
@@ -54,10 +55,19 @@ def intro(s,l,i,hero=False):
  tag='h1' if hero else 'h2'
  title=e(t(s['title'],l)).replace('\n','<br>') if not hero else hero_lines(t(s['title'],l))
  return f'<div class="section-head"><div><p class="eyebrow">{i:02d} / {e(t(s.get("label"),l))}</p><{tag}>{title}</{tag}></div>'+ (f'<p class="intro muted">{e(t(s.get("body"),l))}</p>' if s.get('body') else '')+'</div>'
+def image_options(src, sizes):
+ variants=RESPONSIVE.get(src,[])
+ return (' srcset="'+', '.join('/assets/'+x['src']+' '+str(x['width'])+'w' for x in variants)+'" sizes="'+sizes+'" decoding="async"') if variants else ''
+
+# Keep the complete authored CSS in the first response: no render-blocking CSS round trip.
+# Source CSS stays editable; only comments and repeated whitespace are removed.
+INLINE_CSS=' '.join(re.sub(r'/\*.*?\*/','',(R/f).read_text(encoding='utf-8'),flags=re.S).replace("url('assets/", "url('/assets/") for f in ['tokens.css','site.css'])
+INLINE_CSS=re.sub(r'\s+',' ',INLINE_CSS).strip()
+
 def projects(l,home):
  out='<div class="projects-grid">'
  for k,p in C['projects'].items():
-  out+=f'<article class="project"><a class="project-image {k}" href="{path(k,l)}" data-cursor="{L("cursorView",l)}" aria-label="{e(p["name"])} — {L("viewCase",l)}"><img src="/assets/{p["cover"][l]}" alt="{e(p["name"])} — {L("screen",l)}" width="1440" height="720" loading="lazy"></a><p class="project-sector">{e(t(p["sector"],l))}</p><h3>{e(p["name"])}</h3><p class="muted">{e(t(p["homeBody" if home else "body"],l))}</p>'+link(L('exploreCase' if home else 'viewCase',l),path(k,l),'text-link')+'</article>'
+  out+=f'<article class="project"><a class="project-image {k}" href="{path(k,l)}" data-cursor="{L("cursorView",l)}" aria-label="{e(p["name"])} — {L("viewCase",l)}"><img src="/assets/{p["cover"][l]}" alt="{e(p["name"])} — {L("screen",l)}" width="1440" height="720" loading="lazy"{image_options(p["cover"][l], "(max-width: 760px) calc(100vw - 40px), (max-width: 1328px) calc((100vw - 176px) / 2), 576px")}></a><p class="project-sector">{e(t(p["sector"],l))}</p><h3>{e(p["name"])}</h3><p class="muted">{e(t(p["homeBody" if home else "body"],l))}</p>'+link(L('exploreCase' if home else 'viewCase',l),path(k,l),'text-link')+'</article>'
  return out+'</div><div class="work-bottom"><p class="muted">'+L('credit',l)+'</p>'+(link(L('allWork',l),path('work',l),'text-link') if home else '')+'</div>'
 def review_text(r,l,a,b,cls):
  # Client words stay verbatim in Arabic; the English page adds a labelled faithful translation.
@@ -121,7 +131,7 @@ def render_section(s,l,i,page):
  return out+'</div></section>'
 def figure(src,caption,l,cls=''):
  w,h=DIMENSIONS[src]
- return f'<figure class="gallery-figure {cls}"><button class="image-open" type="button" data-image="/assets/{src}" data-caption="{e(caption)}" aria-label="{L("zoom",l)}: {e(caption)}"><img src="/assets/{src}" alt="{e(caption)}" width="{w}" height="{h}" loading="lazy"></button><figcaption>{e(caption)}</figcaption></figure>'
+ return f'<figure class="gallery-figure {cls}"><button class="image-open" type="button" data-image="/assets/{src}" data-caption="{e(caption)}" aria-label="{L("zoom",l)}: {e(caption)}"><img src="/assets/{src}" alt="{e(caption)}" width="{w}" height="{h}" loading="lazy"{image_options(src, "(max-width: 760px) 290px, 360px" if 'portrait' in cls else "(max-width: 760px) calc(100vw - 40px), (max-width: 1328px) calc(100vw - 128px), 1200px" if 'wide' in cls or 'case-cover' in cls else "(max-width: 760px) calc(100vw - 40px), (max-width: 1328px) calc((100vw - 160px) / 2), 584px")}></button><figcaption>{e(caption)}</figcaption></figure>'
 def gallery(k,l):
  if k=='spiky':
   out='<div class="gallery-group"><h3>'+t({'en':'The public website','ar':'الموقع التعريفي'},l)+'</h3><p class="muted">'+L('arabicOnly',l)+'</p><div class="gallery-grid">'
@@ -186,7 +196,7 @@ def metadata(k,l,body):
 def build(k,l):
  body=''.join(render_section(s,l,i+1,k)+(marquee(l) if k=='home' and s['kind']=='hero' else '') for i,s in enumerate(C['pages'][k])) if k in C['pages'] else (case(k,l) if k in CASES else privacy(l))
  public={'formEndpoint':K['form_endpoint'],'turnstileSiteKey':K.get('turnstile_site_key',''),'policyVersion':'2026-10-19','formCopy':{key:t(v,l) for key,v in C['form'].items()},'close':L('close',l),'menu':L('menu',l)}
- out=f'<!doctype html><html lang="{l}" dir="{"rtl" if l=="ar" else "ltr"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0B0B0C">'+metadata(k,l,body)+'<link rel="preload" href="/assets/fonts/'+('IBMPlexSansArabic-Medium.woff2' if l=='ar' else 'SpaceGrotesk.woff2')+'" as="font" type="font/woff2" crossorigin><link rel="icon" href="/assets/orven-favicon-64.png" type="image/png"><link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/site.css"><script src="/site.js" defer></script></head><body data-page="'+k+'">'+header(k,l)+'<main id="main">'+body+'</main>'+footer(l)+f'<div class="toast" role="status" aria-live="polite" hidden></div><dialog class="lightbox" aria-label="{L("zoom",l)}"><button class="close" type="button" aria-label="{L("close",l)}">×</button><img alt=""><div class="lb-bar"><button class="lb-prev" type="button" aria-label="{L("previous",l)}"><span aria-hidden="true">←</span></button><p></p><span class="lb-count" aria-hidden="true"></span><button class="lb-next" type="button" aria-label="{L("next",l)}"><span aria-hidden="true">→</span></button></div></dialog><script type="application/json" id="site-settings">'+json.dumps(public,ensure_ascii=False).replace('<','\\u003c')+'</script></body></html>'
+ out=f'<!doctype html><html lang="{l}" dir="{"rtl" if l=="ar" else "ltr"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0B0B0C">'+metadata(k,l,body)+'<link rel="preload" href="/assets/fonts/'+('IBMPlexSansArabic-Medium.woff2' if l=='ar' else 'SpaceGrotesk.woff2')+'" as="font" type="font/woff2" crossorigin><link rel="icon" href="/assets/orven-favicon-64.png" type="image/png"><link rel="preload" href="/assets/fonts/'+('IBMPlexSansArabic-Regular.woff2' if l=='ar' else 'Inter.woff2')+'" as="font" type="font/woff2" crossorigin><style>'+INLINE_CSS+'</style><script src="/site.js" defer></script></head><body data-page="'+k+'">'+header(k,l)+'<main id="main">'+body+'</main>'+footer(l)+f'<div class="toast" role="status" aria-live="polite" hidden></div><dialog class="lightbox" aria-label="{L("zoom",l)}"><button class="close" type="button" aria-label="{L("close",l)}">×</button><img alt=""><div class="lb-bar"><button class="lb-prev" type="button" aria-label="{L("previous",l)}"><span aria-hidden="true">←</span></button><p></p><span class="lb-count" aria-hidden="true"></span><button class="lb-next" type="button" aria-label="{L("next",l)}"><span aria-hidden="true">→</span></button></div></dialog><script type="application/json" id="site-settings">'+json.dumps(public,ensure_ascii=False).replace('<','\\u003c')+'</script></body></html>'
  folder=D/path(k,l).lstrip('/');folder.mkdir(parents=True,exist_ok=True);(folder/'index.html').write_text(out,encoding='utf-8')
 for l in ['en','ar']:
  for k in C['titles']:build(k,l)
