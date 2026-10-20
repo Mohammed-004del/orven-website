@@ -111,14 +111,17 @@ if(form){
   h.innerHTML=lines.map((l,i)=>`<span class="ln"><span style="--i:${i}">${l.join(' ')}</span></span>`).join(' ');return true;
  };
  const done=el=>{el.classList.remove('rv','rv-line','rv-split','in');el.style.removeProperty('--d');if(original.has(el)){el.innerHTML=original.get(el);original.delete(el)}};
- const io=new IntersectionObserver(es=>{let n=0;for(const x of es){if(!x.isIntersecting)continue;const el=x.target,d=Math.min(n++,6)*80;io.unobserve(el);el.style.setProperty('--d',d+'ms');el.classList.add('in');setTimeout(()=>done(el),d+1700)}},{rootMargin:'0px 0px -8% 0px'});
+ const io=new IntersectionObserver(es=>{let n=0;for(const x of es){if(!x.isIntersecting)continue;const el=x.target,d=Math.min(n++,6)*80;io.unobserve(el);if(el.classList.contains('rv-split')&&!split(el))el.classList.remove('rv-split');el.style.setProperty('--d',d+'ms');el.classList.add('in');setTimeout(()=>done(el),d+1700)}},{rootMargin:'0px 0px -8% 0px'});
  const init=()=>{try{
   root.classList.add('js-motion');
-  const below=el=>el.getBoundingClientRect().top>innerHeight*.92,mark=(sel,...cls)=>$$(sel).forEach(el=>{if(!below(el)||el.classList.contains('rv')&&!cls.length)return;if(cls[0]==='rv-split'&&!split(el))cls=['rv'];el.classList.add('rv',...cls);io.observe(el)});
+  // Read positions before writing classes. Split only a heading entering the viewport,
+  // not every offscreen heading during initial load (which forced repeated page layouts).
+  const pending=[],below=el=>el.getBoundingClientRect().top>innerHeight*.92,mark=(sel,...cls)=>$$(sel).forEach(el=>{if(below(el))pending.push([el,cls])});
   mark('.section-head h2,.case-prose>h2,.case-gallery h2','rv-split');
   mark('.cards-grid article,.process-grid article,.team-grid article,.capabilities li,.faq details,.reviews-grid article','rv-line');
   mark('.project-image');
   mark('.section:not(.hero) .section-head .eyebrow,.section:not(.hero) .section-head .intro,.grid article,.project>:not(.project-image),.work-bottom,.review-note,.section-link,.detail>.wrap>.text-link,.cta .actions,.case-prose>:not(h2),.case-text>.wrap>.eyebrow,.case-features>.wrap>.eyebrow,.case-gallery>.wrap>.eyebrow,.gallery-group>h3,.gallery-group>p,.gallery-figure,.case-gallery>.wrap>p');
+  pending.forEach(([el,cls])=>{el.classList.add('rv',...cls);io.observe(el)});
   let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>original.forEach((_,h)=>{if(!h.classList.contains('in'))split(h)}),200)});
   addEventListener('beforeprint',()=>$$('.rv').forEach(done));frame();
  }catch{root.classList.remove('js-motion')}};
