@@ -115,8 +115,11 @@ def render_section(s,l,i,page):
  elif kind in ['cards','services','process','team','channels']:
   out+=f'<div class="grid {kind}-grid" style="--columns:{min(3,len(s["items"]))}">'
   for j,a in enumerate(s['items']):
-   out+=f'<article><span class="item-number">{j+1:02d}</span><h3>{e(t(a["title"],l))}</h3>'
+   away=bool(a.get('status'))  # e.g. a co-founder who is temporarily unavailable
+   name=f'<span class="away-name">{e(t(a["title"],l))}</span>' if away else e(t(a["title"],l))
+   out+=f'<article{" class=\"away\"" if away else ""}><span class="item-number">{j+1:02d}</span><h3>{name}</h3>'
    if 'role' in a: out+='<p class="role">'+e(t(a['role'],l))+'</p>'
+   if away: out+='<p class="status"><span class="status-dot" aria-hidden="true"></span>'+e(t(a['status'],l))+'</p>'
    if a.get('body'): out+='<p class="muted">'+e(t(a['body'],l))+'</p>'
    if 'target' in a: out+=link(e(t(a['cta'],l)),'/'+l+'/'+a['target'],'text-link')
    if 'social' in a and K['linkedin'].get(a['social']): out+=link('LinkedIn',K['linkedin'][a['social']],'text-link',True)

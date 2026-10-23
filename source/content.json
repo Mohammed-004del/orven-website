@@ -1033,6 +1033,10 @@
             "role": {
               "en": "Co-Founder",
               "ar": "شريك مؤسس"
+            },
+            "status": {
+              "en": "Temporarily away",
+              "ar": "غير متاح مؤقتًا"
             }
           }
         ]
