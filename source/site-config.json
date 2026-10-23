@@ -5,7 +5,8 @@
   "instagram": "https://www.instagram.com/orven.dev/",
   "linkedin": {
     "hamed": "https://www.linkedin.com/in/mohammed-mahmood-7327b0301",
-    "hadidy": "https://www.linkedin.com/in/muhammed-mahmoud-7b933933b/"
+    "hadidy": "https://www.linkedin.com/in/muhammed-mahmoud-7b933933b/",
+    "ziad": "https://www.linkedin.com/in/ziad-mohamed-abdelkareem-10601730a/"
   },
   "form_endpoint": "/api/inquiry",
   "hosting_provider": "Cloudflare Workers & Pages",

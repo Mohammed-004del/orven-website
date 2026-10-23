@@ -222,7 +222,7 @@ html[dir=rtl] :is(.btn.secondary,.lb-prev,.lb-next,.menu-toggle)::before{transfo
 html[dir=rtl] .away-name{animation-direction:reverse}
 @keyframes away-sheen{0%{background-position:100% 0}42%,100%{background-position:0 0}}
 .away .role{opacity:.75}
-.away .status{display:inline-flex;align-items:center;gap:10px;margin-top:6px;padding:7px 14px;border:1px solid rgb(113 88 66/.32);border-radius:999px;background:linear-gradient(90deg,rgb(185 161 137/.16),rgb(185 161 137/.03));color:#5E4632;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:500;line-height:1.4}
+.away .status{display:flex;width:fit-content;align-items:center;gap:10px;margin-top:6px;padding:7px 14px;border:1px solid rgb(113 88 66/.32);border-radius:999px;background:linear-gradient(90deg,rgb(185 161 137/.16),rgb(185 161 137/.03));color:#5E4632;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:500;line-height:1.4}
 html[lang=ar] .away .status{letter-spacing:0;text-transform:none;font-size:13px}
 html[dir=rtl] .away .status{background:linear-gradient(270deg,rgb(185 161 137/.16),rgb(185 161 137/.03))}
 .status-dot{position:relative;width:7px;height:7px;border-radius:50%;background:#8E735A;flex:none}
