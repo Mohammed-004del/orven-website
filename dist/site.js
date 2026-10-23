@@ -100,6 +100,8 @@ if(form){
  }
  // Lazy images that are still loading fade in instead of popping.
  $$('img[loading=lazy]').forEach(i=>{if(i.complete)return;i.classList.add('img-fade');const on=()=>i.classList.add('loaded');i.addEventListener('load',on,{once:true});i.addEventListener('error',on,{once:true})});
+ // Founder cards: a soft light follows the pointer inside the card.
+ if(fine)$$('.member').forEach(c=>c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left).toFixed(0)+'px');c.style.setProperty('--my',(e.clientY-r.top).toFixed(0)+'px')},{passive:true}));
  // Scroll reveals. Line-split headings are restored to their original markup once revealed.
  const original=new Map();
  const split=h=>{

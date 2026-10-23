@@ -116,8 +116,9 @@ def render_section(s,l,i,page):
   out+=f'<div class="grid {kind}-grid" style="--columns:{min(3,len(s["items"]))}">'
   for j,a in enumerate(s['items']):
    away=bool(a.get('status'))  # e.g. a co-founder who is temporarily unavailable
-   name=f'<span class="away-name">{e(t(a["title"],l))}</span>' if away else e(t(a["title"],l))
-   out+=f'<article{" class=\"away\"" if away else ""}><span class="item-number">{j+1:02d}</span><h3>{name}</h3>'
+   member=kind=='team' and not away
+   name=f'<span class="away-name">{e(t(a["title"],l))}</span>' if away else f'<span class="member-name">{e(t(a["title"],l))}</span>' if member else e(t(a["title"],l))
+   out+=f'<article{" class=\"away\"" if away else " class=\"member\"" if member else ""}><span class="item-number">{j+1:02d}</span><h3>{name}</h3>'
    if 'role' in a: out+='<p class="role">'+e(t(a['role'],l))+'</p>'
    if away: out+='<p class="status"><span class="status-dot" aria-hidden="true"></span>'+e(t(a['status'],l))+'</p>'
    if a.get('body'): out+='<p class="muted">'+e(t(a['body'],l))+'</p>'

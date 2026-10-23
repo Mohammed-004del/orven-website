@@ -231,3 +231,24 @@ html[dir=rtl] .away .status{background:linear-gradient(270deg,rgb(185 161 137/.1
 .away::before{content:'';position:absolute;top:-1px;inset-inline-start:0;width:28%;height:1px;background:linear-gradient(90deg,transparent,#9A7E62,transparent);pointer-events:none;animation:away-drift 10s ease-in-out infinite alternate}
 @keyframes away-drift{from{translate:0 0}to{translate:calc(257% * var(--dir,1)) 0}}
 @media(prefers-reduced-motion:reduce){.away-name{animation:none;background:none;color:inherit}.status-dot::after,.away::before{animation:none;display:none}}
+/* Active founders: an engraved ink-to-bronze name, a bronze signature line that draws
+   in as the card scrolls into view, and on desktop hover a light that follows the
+   pointer while the name warms and the line extends. Static under reduced motion. */
+.team-grid article.member{position:relative;isolation:isolate}
+.member-name{--a:100deg;background-image:linear-gradient(var(--a),var(--ink) 0 26%,#4F3A29 50%,#7A5F47 76%,#9A7E62 100%);background-size:200% 100%;background-position:0 0;-webkit-background-clip:text;background-clip:text;color:transparent;transition:background-position .9s var(--ease)}
+html[dir=rtl] .member-name{--a:260deg;background-position:100% 0}
+.member h3{position:relative;padding-bottom:18px;margin-bottom:22px!important}
+.member h3::after{content:'';position:absolute;bottom:0;inset-inline-start:0;width:56px;height:2px;border-radius:2px;background:linear-gradient(90deg,#715842,#C9B297 55%,rgb(201 178 151/0));transform-origin:left;transition:width .7s var(--ease)}
+html[dir=rtl] .member h3::after{background:linear-gradient(270deg,#715842,#C9B297 55%,rgb(201 178 151/0));transform-origin:right}
+@supports (animation-timeline:view()){@media(prefers-reduced-motion:no-preference){
+ .member h3::after{animation:sign-in linear both;animation-timeline:view();animation-range:entry 10% cover 38%}
+ @keyframes sign-in{from{transform:scaleX(0);opacity:0}}
+}}
+.member::before{content:'';position:absolute;inset:0 -16px -16px;z-index:-1;border-radius:8px;opacity:0;pointer-events:none;background:radial-gradient(circle 220px at var(--mx,50%) var(--my,40%),rgb(185 161 137/.18),transparent 70%);transition:opacity .5s var(--ease)}
+@media(hover:hover) and (pointer:fine){
+ .member:hover::before{opacity:1}
+ .member:hover .member-name{background-position:100% 0}
+ html[dir=rtl] .member:hover .member-name{background-position:0 0}
+ .member:hover h3::after{width:140px}
+}
+@media(prefers-reduced-motion:reduce){.member::before{display:none}}
